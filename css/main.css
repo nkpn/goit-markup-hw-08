@@ -369,23 +369,46 @@ body {
 
 .page-header .logo {
   margin-right: 284px;
+  padding: 16px 0;
 }
 
 @media (min-width: 768px) {
   .page-header .logo {
     margin-right: 88px;
+    padding: 0 0;
   }
 }
 
 @media (min-width: 1280px) {
   .page-header .logo {
     margin-right: 93px;
+    padding: 0 0;
   }
+}
+
+.page-header .logo-web {
+  color: #2196F3;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.page-header .logo-studio {
+  color: #212121;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .page-header .page-header__menu-icon {
   background-position: center;
   fill: #212121;
+  width: 24px;
+  height: 16px;
 }
 
 .page-header .page-header__menu-icon:hover, .page-header .page-header__menu-icon:focus {

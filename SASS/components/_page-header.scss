@@ -9,29 +9,44 @@
 
     .logo{
        margin-right: 284px;
+       padding: 16px 0;
 
        @media (min-width: $tablet){
            margin-right: 88px;
+           padding: 0 0;
        }
 
        @media (min-width: $desktop){
             margin-right: 93px;
+            padding: 0 0;
        }
 
     }
 
     .logo-web{
-
+        color: $blue-bg-color;
+        font-family: $primary-font-family;
+        font-weight: $bold-font-weight;
+        font-size: $logo-font-size;
+        line-height: $logo-lh;
+        letter-spacing: 0.03em
     }
 
     .logo-studio{
-
+        color: $main-text-color;
+        font-family: $primary-font-family;
+        font-weight: $bold-font-weight;
+        font-size: $logo-font-size;
+        line-height: $logo-lh;
+        letter-spacing: 0.03em;
     }
 
     .page-header__menu-icon{
         background-position: center;
         fill: $menu-icon-color;
-
+        width: 24px;
+        height: 16px;
+        
         &:hover, &:focus{
         transition-property: color;
         transition-duration: $animation-duration;
