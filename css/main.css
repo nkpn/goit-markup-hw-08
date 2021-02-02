@@ -422,13 +422,13 @@ body {
 }
 
 @media (min-width: 768px) {
-  .page-header .page-header__menu-icon:hover, .page-header .page-header__menu-icon:focus {
+  .page-header .page-header__menu-icon {
     display: none;
   }
 }
 
 @media (min-width: 1280px) {
-  .page-header .page-header__menu-icon:hover, .page-header .page-header__menu-icon:focus {
+  .page-header .page-header__menu-icon {
     display: none;
   }
 }
