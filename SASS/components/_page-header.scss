@@ -1,0 +1,164 @@
+.page-header{
+    background: #FFFFFF;
+    border-bottom: 2px solid #ECECEC; /*border-header-color*/
+    display: flex;
+    align-items: center;
+
+    .main-nav{
+        display: flex;
+        align-items: center;
+    }
+
+    .page-header__site-nav{
+        display: flex;
+        font-family: $main-font-family;
+        font-style: normal;
+        font-weight: $normal-font-weight;
+        font-size: $main-font-size;
+        line-height: $header-link-lh;
+        margin-right: 270px;
+
+        &:hover, &:focus{
+        transition-property: color;
+        transition-duration: $animation-duration;
+        transition-timing-function: $animation-timing-function;
+        color: $blue-bg-color;
+        }
+    }
+
+    .page-header__site-nav-item{
+        position: relative;
+        margin-right: 50px;
+        padding: 32px 0;
+
+       &:last-child{
+        margin-right: 0px;
+       } 
+
+       ::after{
+        content: "";
+        position: absolute;
+        display: inline-block;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $blue-bg-color;
+        opacity: 0; 
+        transform: scaleX(0);
+        transition-property: transform;
+        transition-duration: $animation-duration;
+        transition-timing-function: $animation-timing-function;
+       }
+    }
+
+    .current{
+        &::after{
+            content: "";
+            position: absolute;
+            display: inline-block;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: $blue-bg-color;
+            opacity: 1;
+            transform: scaleX(1);    
+        }
+    }
+        
+    .page-header__site-nav-link{
+        &:hover::after, &:focus::after{
+            content: "";
+            position: absolute;
+            display: inline-block;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: $blue-bg-color;
+            opacity: 1;
+            transform: scaleX(1);      
+        }
+    }
+
+    .logo{
+        margin-right: 92px;
+        font-family: $primary-font-family;
+        font-weight: $bold-font-weight;
+        font-size: $logo-font-size;
+        line-height: $logo-lh;
+        letter-spacing: 0.03em;
+      }
+      
+    .logo-web{
+        color: $blue-bg-color;
+        font-family: $primary-font-family;
+        font-weight: $bold-font-weight;
+        font-size: $logo-font-size;
+        line-height: $logo-lh;
+        letter-spacing: 0.03em;
+      }
+      
+    .page-header__site-nav-link{
+        display: block;
+        padding: 0 auto;
+        color: $main-text-color;
+        font-weight: $normal-font-weight;
+        font-size: $main-font-size;
+        line-height: $header-link-lh;
+        letter-spacing: 0.02em;
+    }
+    
+
+    .auth-nav{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page-header__auth-nav-address{
+        padding: auto 0;
+        color: $primary-text-color;
+        font-family: $main-font-family;
+        font-weight: $normal-font-weight;
+        font-size: $main-font-size;
+        line-height: $header-link-lh;
+        letter-spacing: 0.02em;
+        fill: $primary-text-color; 
+
+        &:hover, &:focus{
+        transition-property: color;
+        transition-duration: $animation-duration;
+        transition-timing-function: $animation-timing-function;
+        color:$blue-bg-color;
+        fill:$blue-bg-color;
+        }
+
+        &:not(:last-child){
+            padding-right: 50px;
+        }
+    }
+
+    .header-logo{
+        margin: 0;
+        margin-right: 10px;
+        &:hover{
+            fill: $blue-bg-color;
+        }
+    }
+
+    .logo-studio{
+        color: $main-text-color;
+        font-family: $primary-font-family;
+        font-weight: $bold-font-weight;
+        font-size: $logo-font-size;
+        line-height: $logo-lh;
+        letter-spacing: 0.03em;
+    }
+
+    
+}

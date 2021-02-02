@@ -1,0 +1,19 @@
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto;
+}
+
+body {
+    margin: 0;
+    background-color: $main-bg-color;
+    color: $primary-text-color;
+    font-family: $main-font-family;
+    position: relative;
+}
+
+.page{
+    color: $main-text-color;
+    background-color: $main-bg-color;
+}

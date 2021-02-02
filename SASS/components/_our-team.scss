@@ -1,0 +1,84 @@
+.our-team{
+    background: $primary-bg-color;
+    padding-bottom: 94px;
+    padding-top: 94px;
+
+    .our-team__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 0px;
+    } 
+
+    .our-team__item{
+        background: $white;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+      }
+
+    .our-team__name{
+        font-family: $main-font-family;
+        font-weight: $normal-font-weight;
+        font-size: $names-font-size;
+        line-height: $team-names-lh;
+        letter-spacing: 0.03em;
+        color: $main-text-color;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .h2-title{
+        font-family: $main-font-family;
+        font-weight: $bold-font-weight;
+        font-size: $h2-font-size;
+        line-height: $h2-lh; /*42px*/
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $main-text-color;
+        margin-bottom: 50px;
+    }
+
+    .text{
+        text-align: center;
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+
+    .our-team__social-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        padding-left: 0px;
+      }
+
+      .social-items{
+          &:not(:last-child){
+              margin-right: 10px;
+          }
+      }
+
+    .master-links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        fill: $link-color;
+        &:hover, &:focus{
+            transition-property: background-color;
+            transition-duration: $animation-duration;
+            transition-timing-function: $animation-timing-function;
+  
+            background-color:$blue-bg-color;
+            fill: $white;
+        }
+      } 
+
+    .master-icon{
+        justify-content: center;
+        align-items: center;
+    }
+}

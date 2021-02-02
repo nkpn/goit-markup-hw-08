@@ -1,0 +1,182 @@
+.footer{
+    background: $footer-bg-color;
+    padding: 60px 0;
+
+
+    .container{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    .footer__address-container{
+        display: block;
+    }
+      
+    .join-us__list{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+      
+    .footer__address-list{
+        padding: 0 0;
+    }
+      
+    .footer__join-us-container{
+        display: block;
+        margin-bottom: 0px;
+        margin-left: 70px;
+    }
+      
+    .footer__address-item-1{
+        padding-bottom: 20px;
+    }
+      
+    .footer__address-item{
+    &:not(:last-child){
+        padding-bottom: 9px;
+      }
+    }
+      
+    .web-footer{
+        color: $blue-bg-color;
+        font-family: $primary-font-family;
+        font-weight: $bold-font-weight;
+        font-size: $logo-font-size;
+        line-height: $logo-lh;
+        letter-spacing: 0.03em;
+      }
+      
+    .studio-footer {
+        color: $white;
+        font-family: $primary-font-family;
+        font-weight: $bold-font-weight;
+        font-size: $logo-font-size;
+        line-height: $logo-lh;
+        letter-spacing: 0.03em;
+    }
+      
+    .email-footer{
+        font-family: $main-font-family;
+        font-size: $main-font-size;
+        line-height: $contacts-lh;
+        letter-spacing: 0.03em;
+        color: $footer-contact-color;
+    }
+      
+    .phone-number-footer{
+        font-family: $main-font-family;
+        font-size: $main-font-size;
+        line-height: $contacts-lh;
+        letter-spacing: 0.03em;
+        color: $footer-contact-color;
+    }
+      
+    .address{
+        font-family: $main-font-family;
+        font-style: normal;
+        font-size: $main-font-size;
+        line-height: $contacts-lh;
+        color: $white;
+    }
+      
+    .footer__heading{
+        margin-bottom: 20px;
+        font-family: $main-font-family;
+        font-weight: $bold-font-weight;
+        font-size: $main-font-size;
+        line-height: $h3-lh;
+        text-transform: uppercase;
+        color: $white;
+        padding-top: 10px;
+    }
+      
+    .footer-links{
+        background-color:  rgba(255, 255, 255, 0.1);
+        fill: $white;
+    }
+      
+    .footer__subscribe{
+        padding-left: 93px;
+    }
+      
+    .footer__form{
+        display: flex;
+    }
+      
+    .footer__form-input{
+        width: 358px;
+        height: 50px;
+        margin: 0;
+        padding: 15px auto;
+        padding-left: 16px;
+        padding-right: 12px;
+        font: inherit;
+        font-size: 16px;
+        background-color: #2F303A;
+        color: rgba(255, 255, 255, 0.6);
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+      
+    .footer__form-input:focus{
+        outline: none;
+        border: 1px solid $blue-bg-color;
+    }
+      
+      
+    .button-subscribe{
+        width: 200px;
+        height: 50px;
+        display: flex;
+        text-align: center;
+        padding: 10px 28px;  
+        margin-left: 12px;
+        background-color:$blue-bg-color;
+        border-radius: 4px;
+        box-shadow: $shadow-main-color;
+        cursor: pointer;
+        border-color: transparent;
+        color: #ffffff;
+        fill: #FFFFFF;
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.87;
+      }
+      
+    p{
+        margin-right: 10px;
+    }
+
+    .social-items:not(:last-child){
+        margin-right: 10px;
+    }
+
+    .master-links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        fill: $link-color;
+      
+      &:focus,&:hover{
+        transition-property: background-color;
+        transition-duration: $animation-duration;
+        transition-timing-function: $animation-timing-function;
+      
+        background-color: $blue-bg-color;
+        fill: $white;
+      }
+    }
+      
+      .master-icon{
+          justify-content: center;
+          align-items: center;
+      }
+  }
