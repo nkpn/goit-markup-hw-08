@@ -1,0 +1,60 @@
+.what-are-we-doing{
+    background-color: #ffffff;
+    padding-right: 30px;
+    padding-bottom: 94px;
+
+    //.what-are-we-doing .container{
+    //display: flex;
+    //flex-direction: column;
+    //position: relative;
+
+    .h2-title{
+        font-family: $primary-font-family;
+        font-weight: $bold-font-weight;
+        font-size: $h2-font-size;
+        line-height: $h2-lh; /*42px*/
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $main-text-color;
+        margin-bottom: 50px;
+    }
+  
+    .what-are-we-doing__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 0px;
+    }
+
+    .what-are-we-doing__item{
+        width: calc((100% - 60px) / 3);
+        position: relative;
+        width: 370px;
+        height: 294px;
+
+        &:nth-child(3n){
+            margin-right: 0;
+        }
+      }
+
+    .thumb{
+        position: absolute;
+        width: 100%;
+        height: 70px;
+        background: rgba(47, 48, 58, 0.8);
+        bottom: 0;
+      }
+
+    .thumb h3{
+        padding: 27px 0;
+        text-align: center;
+        font-weight: $bold-font-weight;
+        font-size: $main-font-size;
+        line-height: $header-link-lh;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+    } 
+
+
+}

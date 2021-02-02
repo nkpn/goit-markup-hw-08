@@ -1,18 +1,8 @@
 .container{
-    width: 450px;
-    padding: 0 15px;
-    margin: 0 auto;
-
-    @media (min-width: $tablet){
-        width: 738px;
-    }
-
-    @media (min-width: $desktop){
-        width: 1200px;
-    }
-
-
-
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto;
 }
 
 body {

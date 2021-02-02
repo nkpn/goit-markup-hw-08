@@ -1,0 +1,55 @@
+html{
+    box-sizing: border-box;
+  }
+  
+*, ::before, ::after{
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: $main-bg-color;
+    color: $primary-text-color;
+    font-family: $main-font-family;
+    position: relative;
+}
+  
+a { 
+    text-decoration: none;
+    color: $main-bg-color;
+}
+  
+  ul, li,  a{
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 0 0;
+  }
+  
+  h1, h2, h3, p{
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  
+  li{
+    list-style-type: none;
+    color: $main-text-color;
+  }
+  
+  a:hover, address:hover
+  li:focus, a:focus, address:focus{
+    transition-property: color;
+    transition-duration: $animation-duration;
+    transition-timing-function: $animation-timing-function;
+    text-decoration-color: $blue-bg-color; 
+  }
+
+  .text{
+    color:$primary-text-color;
+  }
+  
+  .page{
+    color: $main-text-color;
+    background-color: $main-bg-color;
+  }
