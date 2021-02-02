@@ -458,12 +458,6 @@ body {
     font-size: 14px;
     line-height: 1.14;
     margin-right: 84px;
-    /*&:hover, &:focus{
-            transition-property: color;
-            transition-duration: $animation-duration;
-            transition-timing-function: $animation-timing-function;
-            color: $blue-bg-color;
-            }*/
   }
 }
 
@@ -478,12 +472,6 @@ body {
     font-size: 14px;
     line-height: 1.14;
     margin-right: 84px;
-    /* &:hover, &:focus{
-            transition-property: color;
-            transition-duration: $animation-duration;
-            transition-timing-function: $animation-timing-function;
-            color: $blue-bg-color;
-            }*/
   }
 }
 
@@ -491,10 +479,6 @@ body {
   margin-right: 50px;
   padding: 32px 0;
   position: relative;
-}
-
-.page-header .page-header__site-nav-item:last-child {
-  margin-right: 0;
 }
 
 .page-header .page-header__site-nav-item ::after {
@@ -519,6 +503,10 @@ body {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-header .page-header__site-nav-item:last-child {
+  margin-right: 0;
 }
 
 .page-header .current ::after {

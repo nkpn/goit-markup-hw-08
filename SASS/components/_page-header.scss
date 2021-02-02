@@ -81,13 +81,6 @@
         font-size: $main-font-size;
         line-height: $header-link-lh;
         margin-right: 84px;
-
-        /*&:hover, &:focus{
-            transition-property: color;
-            transition-duration: $animation-duration;
-            transition-timing-function: $animation-timing-function;
-            color: $blue-bg-color;
-            }*/
         }
 
         @media (min-width: $desktop){
@@ -98,13 +91,6 @@
         font-size: $main-font-size;
         line-height: $header-link-lh;
         margin-right: 84px;
-
-       /* &:hover, &:focus{
-            transition-property: color;
-            transition-duration: $animation-duration;
-            transition-timing-function: $animation-timing-function;
-            color: $blue-bg-color;
-            }*/
         }
     }
 
@@ -112,13 +98,6 @@
         margin-right: 50px;
         padding: 32px 0;
         position: relative;
-        
-        
-        &:last-child{
-            margin-right: 0;
-        }
-
-        
 
         ::after{
             content: "";
@@ -137,9 +116,12 @@
             transition-duration: $animation-duration;
             transition-timing-function: $animation-timing-function;
         }
+        
+        &:last-child{
+            margin-right: 0;
+        }
 
-
-    }
+        }
 
     .current{
         ::after{
@@ -171,6 +153,7 @@
             transition-duration: $animation-duration;
             transition-timing-function: $animation-timing-function;
         }
+        
     }
 
     .auth-nav{
