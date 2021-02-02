@@ -356,6 +356,7 @@ body {
 
 .page-header {
   background-color: #666565;
+  border-bottom: 2px solid #ECECEC;
 }
 
 .page-header .main-nav {
@@ -404,9 +405,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+.page-header .page-header__menu {
+  color: #212121;
+}
+
 .page-header .page-header__menu-icon {
   background-position: center;
-  fill: #212121;
+  fill: currentColor;
   width: 24px;
   height: 16px;
 }
@@ -419,6 +424,7 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #2196F3;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -475,6 +481,77 @@ body {
             color: $blue-bg-color;
             }*/
   }
+}
+
+.page-header .page-header__site-nav-item {
+  margin-right: 50px;
+  padding: 32px 0;
+  position: relative;
+}
+
+.page-header .page-header__site-nav-item:last-child {
+  margin-right: 0;
+}
+
+.page-header .page-header__site-nav-item ::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196F3;
+  opacity: 0;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  transition-property: transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-header .current ::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196F3;
+  opacity: 0;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.page-header .page-header__site-nav-link {
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.page-header .page-header__site-nav-link:hover, .page-header .page-header__site-nav-link:focus {
+  -webkit-transition-property: color;
+  transition-property: color;
+  color: #2196F3;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-header .auth-nav {

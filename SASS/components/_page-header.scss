@@ -1,6 +1,6 @@
 .page-header{
     background-color: #666565; //$white;
-
+    border-bottom: 2px solid $border-header-color;
 
     .main-nav{
         display: flex;
@@ -41,9 +41,13 @@
         letter-spacing: 0.03em;
     }
 
+    .page-header__menu{
+        color: $menu-icon-color;
+    }
+
     .page-header__menu-icon{
         background-position: center;
-        fill: $menu-icon-color;
+        fill: currentColor;
         width: 24px;
         height: 16px;
 
@@ -52,6 +56,7 @@
         transition-duration: $animation-duration;
         transition-timing-function: $animation-timing-function;
         color: $blue-bg-color;
+        cursor: pointer;
         }
 
         @media (min-width: $tablet){
@@ -100,6 +105,71 @@
             transition-timing-function: $animation-timing-function;
             color: $blue-bg-color;
             }*/
+        }
+    }
+
+    .page-header__site-nav-item{
+        margin-right: 50px;
+        padding: 32px 0;
+        position: relative;
+        
+        
+        &:last-child{
+            margin-right: 0;
+        }
+
+        
+
+        ::after{
+            content: "";
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: $blue-bg-color;
+            opacity: 0;
+            transition-property: transform;
+            transform: scaleX(0);
+            transition-property: transform;
+            transition-duration: $animation-duration;
+            transition-timing-function: $animation-timing-function;
+        }
+
+
+    }
+
+    .current{
+        ::after{
+            content: "";
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: $blue-bg-color;
+            opacity: 0;
+            transition-property: transform;
+            transform: scaleX(0);
+        }
+    }
+
+    .page-header__site-nav-link{
+        color: $main-text-color;
+        font-weight: $normal-font-weight;
+        font-size: $main-font-size;
+        line-height: $header-link-lh;
+        letter-spacing: 0.02em;
+
+        &:hover, &:focus{
+            transition-property: color;
+            color:$blue-bg-color;
+            transition-duration: $animation-duration;
+            transition-timing-function: $animation-timing-function;
         }
     }
 
