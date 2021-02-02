@@ -332,12 +332,16 @@ li:focus, a:focus, address:focus {
 @media (min-width: 768px) {
   .container {
     width: 738px;
+    padding: 0 15px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
     width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
   }
 }
 
@@ -360,9 +364,9 @@ body {
 }
 
 .page-header .main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
