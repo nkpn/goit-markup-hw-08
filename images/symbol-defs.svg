@@ -171,8 +171,8 @@
 </symbol>
 
 <symbol>
-</symbol id="menu" viewBox="0 0 40 40">
- <path d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z">
+</symbol id="menu" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg">
+ <path d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z">
 </symbol>
 
 </defs>

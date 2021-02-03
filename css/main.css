@@ -559,9 +559,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
@@ -600,6 +600,12 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #2196F3;
   fill: #2196F3;
+}
+
+@media (min-width: 768px) {
+  .page-header .page-header__auth-nav-address:not(:last-child) {
+    padding-bottom: 10px;
+  }
 }
 
 @media (min-width: 1280px) {

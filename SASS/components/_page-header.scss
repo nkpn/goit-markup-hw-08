@@ -163,7 +163,7 @@
         @media (min-width: $tablet){
         display: inline-flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: start;
         }
 
         @media (min-width: $desktop){
@@ -182,6 +182,7 @@
         line-height: $header-link-lh;
         letter-spacing: 0.02em;
         fill: $primary-text-color; 
+        
 
         &:hover, &:focus{
             transition-property: color;
@@ -191,6 +192,12 @@
             fill:$blue-bg-color;
             }
             
+        @media (min-width: $tablet){
+            &:not(:last-child){
+            padding-bottom: 10px;
+            }
+        }  
+
         @media (min-width: $desktop){
             font-size: $main-font-size;
         
