@@ -326,14 +326,14 @@ li:focus, a:focus, address:focus {
 .container {
   width: 450px;
   padding: 0 15px;
-  margin: 0 auto;
+  margin: 0 0;
 }
 
 @media (min-width: 768px) {
   .container {
     width: 738px;
     padding: 0 0;
-    margin: 0 auto;
+    margin: 0 0;
   }
 }
 
@@ -341,7 +341,7 @@ li:focus, a:focus, address:focus {
   .container {
     width: 1200px;
     padding: 0 0;
-    margin: 0 auto;
+    margin: 0 0;
   }
 }
 
@@ -424,6 +424,7 @@ body {
 
 .page-header .page-header__menu {
   color: #212121;
+  margin-right: 23px;
 }
 
 .page-header .page-header__menu-icon {
