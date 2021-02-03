@@ -428,7 +428,7 @@ body {
 
 .page-header .page-header__menu-icon {
   background-position: center;
-  fill: #212121;
+  fill: currentColor;
   width: 24px;
   height: 16px;
 }
