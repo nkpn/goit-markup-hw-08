@@ -550,7 +550,7 @@ body {
   display: none;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 768px) {
   .page-header .auth-nav {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -559,6 +559,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -567,10 +570,61 @@ body {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.page-header .page-header__auth-nav-address {
+  padding: auto 0;
+  color: #757575;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  fill: #757575;
+}
+
+.page-header .page-header__auth-nav-address:hover, .page-header .page-header__auth-nav-address:focus {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: #2196F3;
+  fill: #2196F3;
+}
+
+@media (min-width: 1280px) {
+  .page-header .page-header__auth-nav-address:not(:last-child) {
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-header .header-logo {
+    margin: 0;
+    margin-right: 8px;
+  }
+  .page-header .header-logo:hover {
+    fill: #2196F3;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-header .header-logo {
+    margin: 0;
+    margin-right: 10px;
+  }
+  .page-header .header-logo:hover {
+    fill: #2196F3;
   }
 }
 
