@@ -1,6 +1,7 @@
 .page-header{
     background-color: $white;
     border-bottom: 2px solid $border-header-color;
+    justify-items: center;
 
     .main-nav{
         display: inline-flex;
@@ -27,18 +28,28 @@
         color: $blue-bg-color;
         font-family: $primary-font-family;
         font-weight: $bold-font-weight;
-        font-size: $logo-font-size;
+        font-size: $logo-mobile-font-size;
         line-height: $logo-lh;
-        letter-spacing: 0.03em
+        letter-spacing: 0.03em;
+
+        @media (min-width: $desktop){
+            font-size: $logo-font-size;
+        }
+
+
     }
 
     .logo-studio{
         color: $main-text-color;
         font-family: $primary-font-family;
         font-weight: $bold-font-weight;
-        font-size: $logo-font-size;
+        font-size: $logo-mobile-font-size;
         line-height: $logo-lh;
         letter-spacing: 0.03em;
+
+        @media (min-width: $desktop){
+            font-size: $logo-font-size;
+        }
     }
 
     //?????
@@ -91,7 +102,7 @@
         font-weight: $normal-font-weight;
         font-size: $main-font-size;
         line-height: $header-link-lh;
-        margin-right: 84px;
+        margin-right: 270px;
         }
     }
 
@@ -167,14 +178,17 @@
         }
 
         @media (min-width: $desktop){
-        display: inline-flex;
+        display: block;
         flex-direction: row;
         align-items: center;
+        align-items: center;
+        justify-content: center;
         }
     }
 
     .page-header__auth-nav-address{
         padding: auto 0;
+        
         color: $primary-text-color;
         font-family: $main-font-family;
         font-weight: $normal-font-weight;

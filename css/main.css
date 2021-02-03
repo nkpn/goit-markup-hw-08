@@ -361,6 +361,7 @@ body {
 .page-header {
   background-color: #ffffff;
   border-bottom: 2px solid #ECECEC;
+  justify-items: center;
 }
 
 .page-header .main-nav {
@@ -395,18 +396,30 @@ body {
   color: #2196F3;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+@media (min-width: 1280px) {
+  .page-header .logo-web {
+    font-size: 26px;
+  }
 }
 
 .page-header .logo-studio {
   color: #212121;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+@media (min-width: 1280px) {
+  .page-header .logo-studio {
+    font-size: 26px;
+  }
 }
 
 .page-header .page-header__menu {
@@ -471,7 +484,7 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    margin-right: 84px;
+    margin-right: 270px;
   }
 }
 
@@ -567,9 +580,7 @@ body {
 
 @media (min-width: 1280px) {
   .page-header .auth-nav {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: block;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -577,6 +588,10 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
