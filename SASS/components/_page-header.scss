@@ -178,7 +178,7 @@
         color: $primary-text-color;
         font-family: $main-font-family;
         font-weight: $normal-font-weight;
-        font-size: $main-font-size;
+        font-size: $main-tablet-font-size;
         line-height: $header-link-lh;
         letter-spacing: 0.02em;
         fill: $primary-text-color; 
@@ -191,29 +191,28 @@
             fill:$blue-bg-color;
             }
             
-            @media (min-width: $desktop){
-            &:not(:last-child){
+        @media (min-width: $desktop){
+            font-size: $main-font-size;
+        
+        &:not(:last-child){
                 padding-right: 50px;
             }
-            }
+        }
         
     }
 
     .header-logo{
+        margin: 0;
+        &:hover{
+            fill: $blue-bg-color;
+        }
+
         @media (min-width: $desktop){
-            margin: 0;
             margin-right: 8px;
-            &:hover{
-                fill: $blue-bg-color;
-            }
             }
     
             @media (min-width: $desktop){
-            margin: 0;
             margin-right: 10px;
-            &:hover{
-                fill: $blue-bg-color;
-            }
             }
        
     }

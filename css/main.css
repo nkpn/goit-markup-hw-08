@@ -332,7 +332,7 @@ li:focus, a:focus, address:focus {
 @media (min-width: 768px) {
   .container {
     width: 738px;
-    padding: 0 15px;
+    padding: 0 0;
     margin: 0 auto;
   }
 }
@@ -340,7 +340,7 @@ li:focus, a:focus, address:focus {
 @media (min-width: 1280px) {
   .container {
     width: 1200px;
-    padding: 0 15px;
+    padding: 0 0;
     margin: 0 auto;
   }
 }
@@ -585,7 +585,7 @@ body {
   color: #757575;
   font-family: Roboto, sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   fill: #757575;
@@ -603,28 +603,31 @@ body {
 }
 
 @media (min-width: 1280px) {
+  .page-header .page-header__auth-nav-address {
+    font-size: 14px;
+  }
   .page-header .page-header__auth-nav-address:not(:last-child) {
     padding-right: 50px;
   }
 }
 
+.page-header .header-logo {
+  margin: 0;
+}
+
+.page-header .header-logo:hover {
+  fill: #2196F3;
+}
+
 @media (min-width: 1280px) {
   .page-header .header-logo {
-    margin: 0;
     margin-right: 8px;
-  }
-  .page-header .header-logo:hover {
-    fill: #2196F3;
   }
 }
 
 @media (min-width: 1280px) {
   .page-header .header-logo {
-    margin: 0;
     margin-right: 10px;
-  }
-  .page-header .header-logo:hover {
-    fill: #2196F3;
   }
 }
 
