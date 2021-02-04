@@ -59,6 +59,8 @@
         background: transparent;
         border: none;
         position: absolute;
+        right: 0;
+        top: 22px;
 
         @media screen and  (min-width: $tablet){
             display: none;
