@@ -56,11 +56,24 @@
     &__menu-button{
         color: $menu-icon-color;
         margin-right: auto;
-        background: transparent;
+        padding: 0;
+        background-color: transparent;
         border: none;
         position: absolute;
         right: 0;
         top: 22px;
+
+        .icon-cross{
+            display: none;
+        }
+
+        .is-open .icon-cross{
+            display: block;
+        }
+
+        .is-open .icon-menu{
+            display: none;
+        }
 
         @media screen and  (min-width: $tablet){
             display: none;

@@ -426,11 +426,24 @@ body {
 .page-header__menu-button {
   color: #212121;
   margin-right: auto;
-  background: transparent;
+  padding: 0;
+  background-color: transparent;
   border: none;
   position: absolute;
   right: 0;
   top: 22px;
+}
+
+.page-header__menu-button .icon-cross {
+  display: none;
+}
+
+.page-header__menu-button .is-open .icon-cross {
+  display: block;
+}
+
+.page-header__menu-button .is-open .icon-menu {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
