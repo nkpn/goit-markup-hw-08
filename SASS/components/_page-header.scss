@@ -6,6 +6,7 @@
     .main-nav{
         display: inline-flex;
         align-items: center;
+        position: relative;
     }
 
     .logo{
@@ -52,9 +53,20 @@
         }
     }
 
-    &__menu{
+    &__menu-button{
         color: $menu-icon-color;
         margin-right: auto;
+        background: transparent;
+        border: none;
+        position: absolute;
+
+        @media screen and  (min-width: $tablet){
+            display: none;
+        }
+ 
+        @media screen and  (min-width: $desktop){
+             display: none;
+        }
     }
 
     &__menu-icon{

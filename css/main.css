@@ -371,6 +371,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .page-header .logo {
@@ -422,9 +423,24 @@ body {
   }
 }
 
-.page-header__menu {
+.page-header__menu-button {
   color: #212121;
   margin-right: auto;
+  background: transparent;
+  border: none;
+  position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header__menu-button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .page-header__menu-button {
+    display: none;
+  }
 }
 
 .page-header__menu-icon {
