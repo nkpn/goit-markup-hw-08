@@ -12,12 +12,12 @@
        margin-right: 284px;
        padding: 16px 0;
 
-       @media (min-width: $tablet){
+       @media screen and  (min-width: $tablet){
            margin-right: 88px;
            padding: 0 0;
        }
 
-       @media (min-width: $desktop){
+       @media screen and  (min-width: $desktop){
             margin-right: 93px;
             padding: 0 0;
        }
@@ -32,7 +32,7 @@
         line-height: $logo-lh;
         letter-spacing: 0.03em;
 
-        @media (min-width: $desktop){
+        @media screen and  (min-width: $desktop){
             font-size: $logo-font-size;
         }
 
@@ -47,18 +47,17 @@
         line-height: $logo-lh;
         letter-spacing: 0.03em;
 
-        @media (min-width: $desktop){
+        @media screen and  (min-width: $desktop){
             font-size: $logo-font-size;
         }
     }
 
-    //?????
-    .page-header__menu{
+    &__menu{
         color: $menu-icon-color;
-        margin-right: 23px;
+        margin-right: auto;
     }
 
-    .page-header__menu-icon{
+    &__menu-icon{
         background-position: center;
         fill: currentColor;
         width: 24px;
@@ -72,21 +71,21 @@
         cursor: pointer;
         }
 
-        @media (min-width: $tablet){
+        @media screen and  (min-width: $tablet){
             display: none;
         }
  
-        @media (min-width: $desktop){
+        @media screen and  (min-width: $desktop){
              display: none;
         }
         
     }
 
 
-    .page-header__site-nav{
+    &__site-nav{
        display: none;
 
-       @media (min-width: $tablet){
+       @media screen and  (min-width: $tablet){
         display: flex;
         font-family: $main-font-family;
         font-style: normal;
@@ -96,7 +95,7 @@
         margin-right: 84px;
         }
 
-        @media (min-width: $desktop){
+        @media screen and  (min-width: $desktop){
         display: flex;
         font-family: $main-font-family;
         font-style: normal;
@@ -107,7 +106,7 @@
         }
     }
 
-    .page-header__site-nav-item{
+    &__site-nav-item{
         margin-right: 50px;
         padding: 32px 0;
         position: relative;
@@ -153,7 +152,7 @@
         }
     }
 
-    .page-header__site-nav-link{
+    &__site-nav-link{
         color: $main-text-color;
         font-weight: $normal-font-weight;
         font-size: $main-font-size;
@@ -172,22 +171,20 @@
     .auth-nav{
         display: none;
 
-        @media (min-width: $tablet){
-        display: inline-flex;
-        flex-direction: column;
+        @media screen and  (min-width: $tablet){
+        display: block;
         justify-content: start;
         }
 
-        @media (min-width: $desktop){
+        @media screen and  (min-width: $desktop){
         display: block;
         flex-direction: row;
-        align-items: center;
         align-items: center;
         justify-content: center;
         }
     }
 
-    .page-header__auth-nav-address{
+    &__auth-nav-address{
         padding: auto 0;
         
         color: $primary-text-color;
@@ -207,13 +204,13 @@
             fill:$blue-bg-color;
             }
             
-        @media (min-width: $tablet){
+        @media screen and  (min-width: $tablet){
             &:not(:last-child){
             padding-bottom: 10px;
             }
         }  
 
-        @media (min-width: $desktop){
+        @media screen and  (min-width: $desktop){
             font-size: $main-font-size;
         
         &:not(:last-child){
@@ -229,11 +226,11 @@
             fill: $blue-bg-color;
         }
 
-        @media (min-width: $desktop){
+        @media screen and  (min-width: $desktop){
             margin-right: 8px;
             }
     
-            @media (min-width: $desktop){
+            @media screen and  (min-width: $desktop){
             margin-right: 10px;
             }
        
