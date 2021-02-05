@@ -2,6 +2,7 @@
     background-color: $white;
     border-bottom: 2px solid $border-header-color;
     justify-items: center;
+    position: relative;
 
     .main-nav{
         display: inline-flex;
@@ -63,7 +64,7 @@
         right: 0;
         top: 22px;
 
-        .icon-cross{
+       /* .icon-cross{
             display: none;
         }
 
@@ -81,7 +82,7 @@
  
         @media screen and  (min-width: $desktop){
              display: none;
-        }
+        }*/
     }
 
     &__menu-icon{

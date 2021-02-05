@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <link rel="stylesheet" href=".\css\main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="page">
@@ -60,7 +60,7 @@
         <li class="projects__item-button"><button class="primary-button" type="button">Дизайн</button></li>
         <li class="projects__item-button"><button class="primary-button" type="button">Маркетинг</button></li>
         </ul>
-    </div>
+    
 
     <!-- PORTFOLIO PROJECTS-->
 
@@ -69,10 +69,19 @@
             <li class="portfolio__item">
                 <a class="portfolio__link" href="#">
                 <div class="portfolio__photo-container">
-                    <img src="../goit-markup-hw-08/images/tekhnokryak.png" alt="laptop" width="370px" height="294px">
-                    <div class="portfolio__thumb">
-                        <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
-                    </div>
+                <img 
+                    srcset="
+                    ./images/portfolio/laptop-desktop@2x.jpg   740w,
+                    ./images/portfolio/laptop-mobile@1x.jpg   450w,
+                    ./images/portfolio/laptop-mobile@2x.jpg   900w
+                    ./images/portfolio/laptop-tablet@1x.jpg   350w,
+                    ./images/portfolio/laptop-tablet@2x.jpg   710w,
+                    "
+                    src="./images/portfolio/laptop-desktop@1x.jpg" 
+                    alt="Технокряк">
+                <div class="portfolio__thumb">
+                     <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                </div>
                 </div>
                 
                 <div class="project__item">
@@ -85,7 +94,16 @@
             <li class="portfolio__item">
                 <a class="portfolio__link" href="#">
                     <div class="portfolio__photo-container">
-                        <img  src="../goit-markup-hw-08/images/poster.png" alt="poster New Orlean" width="370px" height="294px">
+                        <img 
+                        srcset="
+                        ./images/portfolio/poster-desktop@2x.jpg   740w,
+                        ./images/portfolio/poster-mobile@1x.jpg   450w,
+                        ./images/portfolio/poster-mobile@2x.jpg   900w
+                        ./images/portfolio/poster-tablet@1x.jpg   350w,
+                        ./images/portfolio/poster-tablet@2x.jpg   710w,
+                        "
+                        src="./images/portfolio/poster-desktop@1x.jpg" 
+                        alt="Постер">
                         <div class="portfolio__thumb">
                             <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                         </div>
@@ -100,8 +118,17 @@
             <li class="portfolio__item">
                 <a class="portfolio__link" href="#">
                 <div class="portfolio__photo-container">
-                    <img  src="../goit-markup-hw-08/images/restaurant.png" alt="Seafood restaurant" width="370px" height="294px">
-                    <div class="portfolio__thumb">
+                    <img 
+                        srcset="
+                        ./images/portfolio/seafood-desktop@2x.jpg   740w,
+                        ./images/portfolio/seafood-mobile@1x.jpg   450w,
+                        ./images/portfolio/seafood-mobile@2x.jpg   900w
+                        ./images/portfolio/seafood-tablet@1x.jpg   350w,
+                        ./images/portfolio/seafood-tablet@2x.jpg   710w,
+                        "
+                        src="./images/portfolio/seafood-desktop@1x.jpg" 
+                        alt="Seafood">
+                        <div class="portfolio__thumb">
                         <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                     </div>
                 </div>
@@ -115,7 +142,16 @@
             <li class="portfolio__item">
                 <a class="portfolio__link" href="#">
                 <div class="portfolio__photo-container">
-                    <img  src="../goit-markup-hw-08/images/headphones.png" alt="project prime" width="370px" height="294px">
+                    <img 
+                        srcset="
+                        ./images/portfolio/headphones-desktop@2x.jpg   740w,
+                        ./images/portfolio/headphones-mobile@1x.jpg   450w,
+                        ./images/portfolio/headphones-mobile@2x.jpg   900w
+                        ./images/portfolio/headphones-tablet@1x.jpg   350w,
+                        ./images/portfolio/headphones-tablet@2x.jpg   710w,
+                        "
+                        src="./images/portfolio/headphones-desktop@1x.jpg" 
+                        alt="headphones">
                     <div class="portfolio__thumb">
                         <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                     </div>
@@ -130,7 +166,16 @@
             <li class="portfolio__item">
                 <a class="portfolio__link" href="#">
                     <div class="portfolio__photo-container">
-                        <img src="../goit-markup-hw-08/images/boxes.png" alt="project boxes" width="370px" height="294px">
+                        <img 
+                        srcset="
+                        ./images/portfolio/box-desktop@2x.jpg   740w,
+                        ./images/portfolio/box-mobile@1x.jpg   450w,
+                        ./images/portfolio/box-mobile@2x.jpg   900w
+                        ./images/portfolio/box-tablet@1x.jpg   350w,
+                        ./images/portfolio/box-tablet@2x.jpg   710w,
+                        "
+                        src="./images/portfolio/box-desktop@1x.jpg" 
+                        alt="boxes">
                         <div class="portfolio__thumb">
                             <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                         </div>
@@ -145,10 +190,19 @@
             <li class="portfolio__item">
                 <a class="portfolio__link" href="#">
                     <div class="portfolio__photo-container">
-                        <img src="../goit-markup-hw-08/images/inspiration.png" alt="laptop" width="370px" height="294px">
-                        <div class="portfolio__thumb">
+                    <img 
+                        srcset="
+                        ./images/portfolio/display-desktop@2x.jpg   740w,
+                        ./images/portfolio/display-mobile@1x.jpg   450w,
+                        ./images/portfolio/display-mobile@2x.jpg   900w
+                        ./images/portfolio/display-tablet@1x.jpg   350w,
+                        ./images/portfolio/display-tablet@2x.jpg   710w,
+                        "
+                        src="./images/portfolio/display-desktop@1x.jpg" 
+                        alt="Display">
+                    <div class="portfolio__thumb">
                             <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
-                        </div>
+                    </div>
                     </div>
                 <div class="project__item">
                 <h3 class="project__item__name">Inspiration has no Borders</h3>
@@ -160,7 +214,16 @@
             <li class="portfolio__item">
                 <a class="portfolio__link" href="#">
                     <div class="portfolio__photo-container">
-                        <img src="../goit-markup-hw-08/images/book-limited-edition.png" alt="Book Limited Edition" width="370px" height="294px">
+                    <img 
+                        srcset="
+                        ./images/portfolio/box-desktop@2x.jpg   740w,
+                        ./images/portfolio/box-mobile@1x.jpg   450w,
+                        ./images/portfolio/box-mobile@2x.jpg   900w
+                        ./images/portfolio/box-tablet@1x.jpg   350w,
+                        ./images/portfolio/box-tablet@2x.jpg   710w,
+                        "
+                        src="./images/portfolio/box-desktop@1x.jpg" 
+                        alt="boxes">
                         <div class="portfolio__thumb">
                             <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                         </div>
@@ -175,8 +238,17 @@
             <li class="portfolio__item">
                 <a class="portfolio__link" href="#">
                 <div class="portfolio__photo-container">
-                    <img src="../goit-markup-hw-08/images/lab.png" alt="project Lab" width="370px" height="294px">
-                    <div class="portfolio__thumb">
+                    <img 
+                        srcset="
+                        ./images/portfolio/book-desktop@2x.jpg   740w,
+                        ./images/portfolio/book-mobile@1x.jpg   450w,
+                        ./images/portfolio/book-mobile@2x.jpg   900w
+                        ./images/portfolio/book-tablet@1x.jpg   350w,
+                        ./images/portfolio/book-tablet@2x.jpg   710w,
+                        "
+                        src="./images/portfolio/book-desktop@1x.jpg" 
+                        alt="book">
+                        <div class="portfolio__thumb">
                         <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                     </div>
                 </div>
@@ -190,8 +262,17 @@
             <li class="portfolio__item">
                 <a class="portfolio__link" href="#">
                 <div class="portfolio__photo-container">
-                    <img src="../goit-markup-hw-08/images/laptop-grow.png" alt="Growing Business" width="370px" height="294px">
-                    <div class="portfolio__thumb">
+                    <img 
+                        srcset="
+                        ./images/portfolio/laptop-2-desktop@2x.jpg   740w,
+                        ./images/portfolio/laptop-2-mobile@1x.jpg   450w,
+                        ./images/portfolio/laptop-2-mobile@2x.jpg   900w
+                        ./images/portfolio/laptop-2-tablet@1x.jpg   350w,
+                        ./images/portfolio/laptop-2-tablet@2x.jpg   710w,
+                        "
+                        src="./images/portfolio/laptop-2-desktop@1x.jpg" 
+                        alt="laptop">
+                         <div class="portfolio__thumb">
                         <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                     </div>
                 </div>
@@ -203,6 +284,7 @@
             </li>
 
         </ul>
+    </div>
     </div>
     </section>
   
