@@ -829,13 +829,14 @@ body {
 
 @media screen and (min-width: 768px) {
   .features__item {
-    width: calc((100%-30px)/2);
+    width: calc((100% - 30px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .features__item {
-    width: calc((100%-90px)/4);
+    width: calc((100% - 90px) / 4);
+    margin-bottom: 0;
   }
 }
 
@@ -850,7 +851,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #F5F4FA;
   border-radius: 4px;
   margin-bottom: 30px;
 }
