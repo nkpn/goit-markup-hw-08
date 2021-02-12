@@ -799,7 +799,7 @@ body {
 
 .features {
   background-color: #ffffff;
-  padding-top: 60px auto;
+  padding-top: 60px;
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.71;
@@ -807,7 +807,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .features {
-    padding: 94px auto;
+    padding-top: 94px;
   }
 }
 
@@ -827,21 +827,15 @@ body {
   }
 }
 
-.features__item {
-  padding-bottom: 30px;
-}
-
 @media screen and (min-width: 768px) {
   .features__item {
     width: calc((100%-30px)/2);
-    padding: 60px auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .features__item {
     width: calc((100%-90px)/4);
-    padding: 94px auto;
   }
 }
 
