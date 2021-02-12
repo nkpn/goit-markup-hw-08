@@ -8,28 +8,31 @@
         flex-wrap: wrap;
         justify-content: space-between;
         
-        @media screen and (max-width: $desktop) {
-        margin-top: -30px;
+        @media screen and (max-width: $tablet) {
+        margin: -15px;
         }
 
     }
 
     &__item{
         display: flex;
+        align-items: center;
+        justify-content: center;
         height: 90px;
-        width: calc((100% - 30px) / 2);
+        margin: 15px;
+        width: calc((100% - 4 * 15px) / 2);
         border: 1px solid #AFB1B8;
         color: $link-color;
         box-sizing: border-box;
         border-radius: 4px;
+        
 
         @media screen and (min-width: $tablet) {
-        width: calc((100% - 60px) / 3);
+            width: calc((100% - 6 * 15px) / 3);
         }
       
         @media screen and (min-width: $desktop) {
-        width: calc((100% - 150px) / 6);
-        margin-top: 30px;
+            width: calc((100% - 12 * 15px) / 6);
         }
 
         &:focus, &:hover{
