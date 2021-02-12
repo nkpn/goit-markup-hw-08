@@ -805,36 +805,83 @@ body {
   line-height: 1.71;
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .features {
     padding: 94px auto;
   }
 }
 
-.features__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .features__item {
-  display: block;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  padding-bottom: 30px;
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .features__item {
-    display: inline-block;
+    width: calc((100%-30px)/2);
+    padding: 60px auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: calc((100%-90px)/4);
     padding: 94px auto;
+  }
+}
+
+.features__icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features .features-item__icon {
+  margin: 25px 100px;
+  background-size: contain;
+  background-position: center;
+}
+
+.features .features-item__title {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .features .features-item__title {
+    text-align: left;
   }
 }
 

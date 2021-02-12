@@ -5,28 +5,68 @@
     font-size: $main-font-size;
     line-height: $features-text-lh;
 
-    @media (min-width: $desktop){
+    @media screen and (min-width: $desktop){
         padding: 94px auto;
     }
 
 
     &__list{
+        
+        
+        @media screen and (min-width: $tablet){
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        @media (min-width: $tablet){
-            
         }
+        
+       
     }
 
     &__item{
-        display: block;
-        justify-content: space-around;
+        padding-bottom: 30px;
 
-        @media (min-width: $desktop){
-            display: inline-block;
+        @media screen and (min-width: $tablet){
+            width: calc((100%-30px)/2);
+            padding: 60px auto;
+        }
+
+        @media screen and (min-width: $desktop){
+            width: calc((100%-90px)/4);
             padding: 94px auto;
         }
     }
+
+    &__icon-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: $white;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+
+    .features-item__icon{
+        margin: 25px 100px;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .features-item__title{
+        font-family: $main-font-family;
+        font-weight: $bold-font-weight;
+        font-size: $main-font-size;
+        line-height: $header-link-lh;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $main-text-color;
+        padding-bottom: 10px;
+        text-align: center;
+
+        @media screen and (min-width: $tablet) {
+        text-align: left;
+        }
+    }
+
 }
