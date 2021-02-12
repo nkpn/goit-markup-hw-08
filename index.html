@@ -243,34 +243,35 @@
         <li class="our-team__item">
             <picture>
                 <source
-                media="(min-width: 1200px)"
-                srcset="
-                ./images/our-team/Olga-desktop@1x.jpg 1x,
-                ./images/our-team/Olga-desktop@2x.jpg 2x
-                "
-                type="image/jpg"
-                >
+                    srcset="
+                    ./images/our-team/Olga-mobile@1x.jpg 1x,
+                    ./images/our-team/Olga-mobile@2x.jpg 2x
+                    "
+                    media="max-width: 767px"
+                    type="image/jpg"
+                />
                 <source
-                media="(min-width: 768px)"
-                srcset="
-                ./images/our-team/Olga-tablet@1x.jpg 1x,
-                ./images/our-team/Olga-tablet@2x.jpg 2x
-                "
-                type="image/jpg"
-                >
+                    srcset="
+                    ./images/our-team/Olga-tablet@1x.jpg 1x,
+                    ./images/our-team/Olga-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                    type="image/jpg"
+                />
                 <source
-                srcset="
-                ./images/our-team/Olga-mobile@1x.jpg 1x,
-                ./images/our-team/Olga-mobile@2x.jpg 2x
-                "
-                type="image/jpg"
-                >
+                    srcset="
+                    ./images/our-team/Olga-desktop@1x.jpg 1x,
+                    ./images/our-team/Olga-desktop@2x.jpg 2x
+                    "
+                    media="min-width: 1200px"
+                    type="image/jpg"
+                />
                 <img
                 class="our-team__photo"
-                src="./images/our-team/Olga-mobile@1x.jpg"
-                alt="Front-End разработчик Ольга"
-                width="450px"
-                >
+                src="./images/our-team/Olga-tablet@1x.jpg"
+                alt="Frontend разработчик Ольга"
+                width="354px" height="374px"
+                />
             </picture>
             <h3 class="our-team__name">Ольга Репина</h3>
             <p class="text">Frontend Developer</p>
@@ -380,7 +381,7 @@
                 <source
                     srcset="
                     ./images/our-team/Mihail-mobile@1x.jpg 1x,
-                    ./images/our-team/Mihail-mobile@2x.jpg 2x,
+                    ./images/our-team/Mihail-mobile@2x.jpg 2x
                     "
                     media="max-width: 767px"
                     type="image/jpg"
@@ -388,7 +389,7 @@
                 <source
                     srcset="
                     ./images/our-team/Mihail-tablet@1x.jpg 1x,
-                    ./images/our-team/Mihail-tablet@2x.jpg 2x,
+                    ./images/our-team/Mihail-tablet@2x.jpg 2x
                     "
                     media="(min-width: 768px) and (max-width: 1199px)"
                     type="image/jpg"
@@ -396,15 +397,15 @@
                 <source
                     srcset="
                     ./images/our-team/Mihail-desktop@1x.jpg 1x,
-                    ./images/our-team/Mihail-desktop@2x.jpg 2x,
+                    ./images/our-team/Mihail-desktop@2x.jpg 2x
                     "
-                    media="(min-width: 1200px)"
+                    media="min-width: 1200px"
                     type="image/jpg"
                 />
                 <img
                 class="our-team__photo"
                 src="./images/our-team/Mihail-tablet@1x.jpg"
-                alt="Дизайнер интерфейсов Михаил"
+                alt="UI Дизайнер Михаил"
                 width="354px" height="374px"
                 />
             </picture>
