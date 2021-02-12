@@ -1,14 +1,12 @@
 .what-are-we-doing{
-    background-color: #ffffff;
-    padding-right: 30px;
-    padding-bottom: 94px;
+    background-color: $white;
+    padding-top: 64px;
 
-    //.what-are-we-doing .container{
-    //display: flex;
-    //flex-direction: column;
-    //position: relative;
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 
-    .h2-title{
+      .h2-title{
         font-family: $primary-font-family;
         font-weight: $bold-font-weight;
         font-size: $h2-font-size;
@@ -18,7 +16,7 @@
         color: $main-text-color;
         margin-bottom: 50px;
     }
-  
+
     .what-are-we-doing__list{
         display: flex;
         flex-wrap: wrap;
@@ -55,6 +53,4 @@
         text-transform: uppercase;
         color: $white;
     } 
-
-
 }

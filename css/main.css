@@ -827,6 +827,12 @@ body {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .features__item {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .features__item {
     width: calc((100% - 30px) / 2);
@@ -882,8 +888,13 @@ body {
 
 .what-are-we-doing {
   background-color: #ffffff;
-  padding-right: 30px;
-  padding-bottom: 94px;
+  padding-top: 64px;
+}
+
+@media screen and (max-width: 1199px) {
+  .what-are-we-doing {
+    display: none;
+  }
 }
 
 .what-are-we-doing .h2-title {
@@ -946,26 +957,69 @@ body {
   padding-top: 94px;
 }
 
-.our-team .our-team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 0px;
+.our-team .h2-title {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
 }
 
-.our-team .our-team__item {
-  background: #ffffff;
+@media screen and (min-width: 1200px) {
+  .our-team .h2-title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px -1px) {
+  .our-team__list {
+    margin-top: -30px;
+  }
+}
+
+.our-team__item {
+  background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team .our-team__name {
+@media screen and (min-width: 768px) {
+  .our-team__item {
+    width: calc((100% - 30px) / 2);
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team__item {
+    width: calc((100% - 30px) / 4);
+  }
+}
+
+.our-team__photo {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.our-team__name {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -976,25 +1030,13 @@ body {
   text-align: center;
 }
 
-.our-team .h2-title {
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  /*42px*/
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 50px;
-}
-
 .our-team .text {
   text-align: center;
   padding-bottom: 30px;
   padding-top: 10px;
 }
 
-.our-team .our-team__social-list {
+.our-team__social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -21,7 +21,9 @@
     }
 
     &__item{
-        
+        @media screen and (max-width: $desktop){
+            margin-bottom: 30px;
+        }
 
         @media screen and (min-width: $tablet){
             width: calc((100% - 30px) / 2);
