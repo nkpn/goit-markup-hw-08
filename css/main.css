@@ -358,6 +358,11 @@ body {
   background-color: #E5E5E5;
 }
 
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .page-header {
   background-color: #ffffff;
   border-bottom: 2px solid #ECECEC;
@@ -640,7 +645,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .page-header__auth-nav-address:not(:last-child) {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -650,6 +655,12 @@ body {
   }
   .page-header__auth-nav-address:not(:last-child) {
     padding-right: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-header__mail:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
@@ -675,34 +686,40 @@ body {
 
 .h1-section {
   text-align: center;
-  padding: 200px 0;
-  background-color: #C4C4C4;
-  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+  padding: 118px 0;
 }
 
-.h1-section .h1-section__title {
+@media screen and (min-width: 1200px) {
+  .h1-section {
+    padding: 200px 0;
+  }
+}
+
+.h1-section__title {
   display: block;
+  width: 360px;
   font-family: Roboto, sans-serif;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  width: 696px;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 696px;
   margin: 0 auto;
 }
 
-.h1-section .h1-section__button {
+@media screen and (min-width: 1200px) {
+  .h1-section__title {
+    width: 696px;
+    font-size: 44px;
+  }
+}
+
+.h1-section__button {
   background: #2196F3;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15);
           box-shadow: rgba(0, 0, 0, 0.15);
@@ -714,24 +731,13 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: #ffffff;
-  margin-top: 40px;
+  margin-top: 30px;
   padding: 10px 32px;
-  display: inline-block;
-  outline: transparent;
-  cursor: pointer;
-  min-width: 200px;
-  min-height: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .overlay {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -741,6 +747,19 @@ body {
   text-align: center;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-mobile@1x.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile@1x.jpg);
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay {
+    height: 600px;
+    max-width: 1600px;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
@@ -775,6 +794,47 @@ body {
   .overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-desktop@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop@2x.jpg);
+  }
+}
+
+.features {
+  background-color: #ffffff;
+  padding-top: 60px auto;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+@media (min-width: 1200px) {
+  .features {
+    padding: 94px auto;
+  }
+}
+
+.features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features__item {
+  display: block;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (min-width: 1200px) {
+  .features__item {
+    display: inline-block;
+    padding: 94px auto;
   }
 }
 

@@ -1,28 +1,34 @@
 .h1-section{
     text-align: center;
-    padding: 200px 0;
-    background-color: $h1-bg-color;
-    text-align: center;
     justify-content: center;
     margin: 0 auto;
+    padding: 118px 0;
+    
 
-    .h1-section__title{
+    @media screen and  (min-width: $desktop){
+         padding: 200px 0;
+    }
+
+
+    &__title{
         display: block;
+        width: 360px;
         font-family: $main-font-family;
         font-weight: $h1-font-weight;
-        font-size: $h1-font-size;
-        line-height: $h1-lh;
+        font-size: $h1-tablet-font-size;
+        line-height: $h1-tablet-lh;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: $white;
-        width: 696px;
-        text-align: center;
-        justify-content: center;
-        width: 696px;
         margin: 0 auto;
+
+        @media screen and  (min-width: $desktop){
+            width: 696px;
+            font-size: $h1-font-size;
+        }
     }
 
-    .h1-section__button{
+    &__button{
         background: $blue-bg-color;
         box-shadow: $shadow-main-color;
         border-radius: 4px;
@@ -33,14 +39,9 @@
         line-height: $h1-button-lh;
         letter-spacing: 0.06em;
         color: $white;
-        margin-top: 40px;
+        margin-top: 30px;
         padding: 10px 32px;
-        display: inline-block;
-        outline: transparent;
-        cursor: pointer;
-        min-width: 200px;
-        min-height: 50px;
-        justify-content: center;
-        align-items: center;
-      }
+    }
+
+
 }
