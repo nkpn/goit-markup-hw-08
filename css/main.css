@@ -1009,7 +1009,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .our-team__item {
-    width: calc((100% - 30px) / 4);
+    width: calc((100% - 90px) / 4);
   }
 }
 
