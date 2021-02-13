@@ -1354,6 +1354,7 @@ body {
 .features {
   background-color: #ffffff;
   padding-top: 60px;
+  padding-bottom: 60px;
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.71;
@@ -1362,6 +1363,7 @@ body {
 @media screen and (min-width: 1200px) {
   .features {
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
