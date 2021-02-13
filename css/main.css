@@ -1586,7 +1586,7 @@ body {
 
 .our-team .text {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
   padding-top: 10px;
 }
 
@@ -1600,8 +1600,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
   padding-left: 0px;
+  padding-bottom: 30px;
+}
+
+.our-team__social-list:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .our-team .social-items:not(:last-child) {

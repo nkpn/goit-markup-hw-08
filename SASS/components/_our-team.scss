@@ -66,7 +66,7 @@
 
     .text{
         text-align: center;
-        padding-bottom: 30px;
+        padding-bottom: 16px;
         padding-top: 10px;
     }
 
@@ -74,8 +74,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 30px;
         padding-left: 0px;
+        padding-bottom: 30px;
+
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
     }
 
     .social-items{
