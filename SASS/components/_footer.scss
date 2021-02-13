@@ -3,8 +3,9 @@
     padding: 60px 0;
     text-align: center;
 
-    .container{
-    @media screen and (min-width: $tablet) {
+    &__container{
+    
+    @media screen and (min-width: $tablet){
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -17,6 +18,7 @@
         justify-content: space-between;
         text-align: left;
     }
+    
     }
 
     &__main{
