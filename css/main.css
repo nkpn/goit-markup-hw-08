@@ -1507,8 +1507,15 @@ body {
 
 .our-team {
   background: #F5F4FA;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .our-team .h2-title {
@@ -1538,6 +1545,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-top: -30px;
   }
 }
 
@@ -1651,8 +1659,15 @@ body {
 
 .customers {
   background-color: #ffffff;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .customers__list {
@@ -2050,6 +2065,7 @@ body {
 }
 
 .projects .projects__list {
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
