@@ -39,11 +39,13 @@
   &__photo-container{
     position: relative;
     overflow: hidden;
-    //display:block;
   }
 
   &__img{
     margin: 0;
+    max-width: 100%;
+    height: auto;
+
   }
 
   &__thumb{
