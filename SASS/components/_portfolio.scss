@@ -1,91 +1,98 @@
 .portfolio{
-    background-color: $white;
-    margin: 0 auto;
+  background-color: $white;
+  margin: 0 auto;
 
-    .portfolio__list{
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 0;
-        margin: -15px;
-      }
-
-    .portfolio__item{
-        display: block;
-        background-color: $white;
-        border: 1px solid #EEEEEE;
-        box-sizing: border-box;
-        width: calc((100% - 60px) / 3);
-        width: 100%; //370px
-        margin-right: 30px;
-        margin-top: 30px;
-        margin: 15px;
+  &__list{
+    margin-bottom: -30px;
+    
+    @media screen and (min-width:$tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 0;
+      justify-content: space-between;
+      margin: -15px;
     }
-
-    .portfolio__list img{
-        display: block;
-        max-width: 100%;
-        height: auto;
-    }
-      
-    .project__item{
-        padding: 20px 24px;
-        border: 1px solid #EEEEEE;
-    }
-      
-    .portfolio__photo-container{
-        position: relative;
-        overflow: hidden;
-    }
-      
-    .portfolio__thumb{
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        padding: 63px 24px;
-        background-color: $blue-bg-color;
-        transform: translateY(100%);
-        transition-property: transform;
-        transition-duration: $animation-duration;
-        transition-timing-function: $animation-timing-function;
   }
-      
-    .portfolio__link{
-        display: block;
-        width: 100%;
-        margin: 0;
 
-        &:hover .portfolio__thumb,
-        &:focus .portfolio__thumb{
-            transform: translateY(0);
-        }
+  &__item{
+    margin-bottom: 30px;
+    align-items: center;
+    background-color: $white;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
 
-        &:hover, &:focus{
-            cursor: pointer;
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);      
-        }
-      }
-      
-      p{
-        font-size: $thumb-font-size;
-        line-height: $thumb-text-lh;
-        color: $white;
-      }
-      
-      .project__item__text{
-        font-size: $names-font-size;
-        line-height: $h1-button-lh;
-        color: $primary-text-color;
-        font-weight: normal;
-      }
-      
-      .project__item__name{
-        font-size: $thumb-font-size;
-        line-height: $project-name-lh;
-        font-weight: $bold-font-weight;
-        color: $main-text-color;
-      }
+    @media screen and (min-width:$tablet) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
 
+    @media screen and (min-width:$desktop) {
+      width: calc((100% - 6* 15px) / 3 );
+    }  
+  }
+
+  .project__item{
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+  }
+  
+  &__photo-container{
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__img{
+    margin: 0;
+  }
+
+  &__thumb{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    background-color: $blue-bg-color;
+    transform: translateY(100%);
+    transition-property: transform;
+    transition-duration: $animation-duration;
+    transition-timing-function: $animation-timing-function;
+  }
+
+  &__link{
+    display: block;
+    width: 100%;
+    margin: 0;
+
+    &:hover .portfolio__thumb,
+    &:focus .portfolio__thumb{
+        transform: translateY(0);
+    }
+
+    &:hover, &:focus{
+      cursor: pointer;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);      
+    }
+  }
+
+  p{
+    font-size: $thumb-font-size;
+    line-height: $thumb-text-lh;
+    color: $white;
+  }
+
+  .project__item__text{
+    font-size: $names-font-size;
+    line-height: $h1-button-lh;
+    color: $primary-text-color;
+    font-weight: normal;
+  }
+  
+  .project__item__name{
+    font-size: $thumb-font-size;
+    line-height: $project-name-lh;
+    font-weight: $bold-font-weight;
+    color: $main-text-color;
+  }
 
 }
