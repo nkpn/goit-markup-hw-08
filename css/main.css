@@ -2023,8 +2023,15 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   background: #ffffff;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .projects .visually-hidden {
