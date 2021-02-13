@@ -1875,7 +1875,6 @@ body {
 
 .footer .footer__heading {
   text-align: center;
-  margin-bottom: 20px;
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -1891,6 +1890,7 @@ body {
 }
 
 .footer .social-items {
+  margin-top: 20px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1985,6 +1985,7 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
+  margin-top: 20px;
 }
 
 .footer .button-div {

@@ -115,7 +115,6 @@
     //join-us-container
     .footer__heading{
         text-align: center;
-        margin-bottom: 20px;
         font-family: $main-font-family;
         font-weight: $bold-font-weight;
         font-size: $main-font-size;
@@ -130,6 +129,7 @@
     }
 
     .social-items{
+        margin-top: 20px;
         flex-direction: row;
 
         &:not(:last-child){
@@ -211,6 +211,7 @@
         font-weight: bold;
         font-size: 16px;
         line-height: 1.87;
+        margin-top: 20px;
     }
 
     .button-div{
