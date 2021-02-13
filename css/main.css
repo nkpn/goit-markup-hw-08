@@ -1881,6 +1881,7 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .footer .join-us__list {
@@ -1890,7 +1891,6 @@ body {
 }
 
 .footer .social-items {
-  margin-top: 20px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1943,8 +1943,22 @@ body {
           align-items: center;
 }
 
-.footer__form {
-  display: block;
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .footer .footer__form-input {
@@ -1986,6 +2000,9 @@ body {
   font-size: 16px;
   line-height: 1.87;
   margin-top: 20px;
+  /*@media screen and (min-width: $tablet) {
+        margin-top: 0;
+        }*/
 }
 
 .footer .button-div {

@@ -121,7 +121,7 @@
         line-height: $h3-lh;
         text-transform: uppercase;
         color: $white;
-        //padding-top: 10px;
+        margin-bottom: 20px;
     }
 
     .join-us__list{
@@ -129,7 +129,6 @@
     }
 
     .social-items{
-        margin-top: 20px;
         flex-direction: row;
 
         &:not(:last-child){
@@ -169,7 +168,12 @@
 
     //footer-subscribe
     &__form{
-        display: block;
+        @media screen and (min-width: $desktop) {
+            display: flex;
+            flex-direction: row; 
+            justify-content: center;
+            align-items: baseline;
+        }
         
     }
 
@@ -212,6 +216,10 @@
         font-size: 16px;
         line-height: 1.87;
         margin-top: 20px;
+
+        /*@media screen and (min-width: $tablet) {
+        margin-top: 0;
+        }*/
     }
 
     .button-div{
