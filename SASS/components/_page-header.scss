@@ -234,12 +234,12 @@
             fill: $blue-bg-color;
         }
 
-        @media screen and  (min-width: $desktop){
-            margin-right: 8px;
+        @media screen and  (min-width: $tablet){
+            padding-right: 8px;
             }
     
             @media screen and  (min-width: $desktop){
-            margin-right: 10px;
+            padding-right: 10px;
             }
        
         }
