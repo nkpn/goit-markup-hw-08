@@ -1006,6 +1006,16 @@ body {
   z-index: 25;
 }
 
+.page-header__menu-button:hover, .page-header__menu-button:focus {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: #2196F3;
+}
+
 @media screen and (min-width: 768px) {
   .page-header__menu-button {
     display: none;
