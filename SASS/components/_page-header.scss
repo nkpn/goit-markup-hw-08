@@ -184,12 +184,11 @@
         margin-left: auto;
         }
 
-        @media screen and  (min-width: $desktop){
-        display: flex;
-        flex-direction: row;
+        /*@media screen and  (min-width: $desktop){
+        display: inline-block;
         align-items: center;
         justify-content: center;
-        }
+        }*/
     }
 
     &__auth-nav-address{

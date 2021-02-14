@@ -33,6 +33,7 @@
             @media screen and (min-width: $tablet) {
             width: 50%;
             display: inline-flex;
+            justify-content: center;
             }
 
             @media screen and (min-width: $desktop) {
@@ -117,7 +118,7 @@
         color: $footer-contact-color;
     }
 
-    //join-us-container
+
     .footer__heading{
         text-align: center;
         font-family: $main-font-family;
@@ -127,6 +128,10 @@
         text-transform: uppercase;
         color: $white;
         margin-bottom: 20px;
+
+        @media screen and (min-width:$desktop) {
+            text-align: left;
+        }
     }
 
     .join-us__list{

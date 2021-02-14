@@ -1134,30 +1134,17 @@ body {
 
 .page-header .auth-nav {
   display: none;
+  /*@media screen and  (min-width: $desktop){
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        }*/
 }
 
 @media screen and (min-width: 768px) {
   .page-header .auth-nav {
     display: inline-block;
     margin-left: auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .page-header .auth-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
@@ -1799,6 +1786,9 @@ body {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1894,6 +1884,12 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .footer__heading {
+    text-align: left;
+  }
 }
 
 .footer .join-us__list {
