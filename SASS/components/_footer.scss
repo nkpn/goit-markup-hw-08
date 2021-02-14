@@ -178,9 +178,14 @@
             flex-direction: row; 
             justify-content: center;
             align-items: baseline;
-        }
-        
+        }  
     }
+
+    .subscribe-heading{
+    @media screen and (min-width:$tablet) and (max-width:$desktop) {
+        margin-bottom: 0px;
+    }
+    }   
 
     .footer__form-input{
         width: 358px;
