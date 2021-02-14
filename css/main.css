@@ -2270,6 +2270,10 @@ body {
   display: block;
 }
 
+.mobile-menu .page-header__site-nav-item {
+  padding: 0;
+}
+
 .mobile-menu .page-header__site-nav-item:not(:last-child) {
   margin-bottom: 32px;
 }
