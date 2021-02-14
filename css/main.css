@@ -1183,6 +1183,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .page-header__auth-nav-address:not(:last-child) {
+    display: block;
     margin-bottom: 10px;
   }
 }
