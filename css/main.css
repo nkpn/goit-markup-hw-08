@@ -1093,6 +1093,7 @@ body {
 .page-header .current::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+  opacity: 1;
 }
 
 .page-header__site-nav-link {

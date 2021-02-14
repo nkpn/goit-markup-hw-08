@@ -141,6 +141,7 @@
     .page-header__site-nav-link:focus::after,
     .current::after{
         transform: scaleX(1);
+        opacity: 1;
     }
 
     &__site-nav-link{
