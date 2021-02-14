@@ -5,7 +5,8 @@
     position: relative;
 
     .main-nav{
-        display: inline-flex;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
         position: relative;
     }

@@ -536,68 +536,161 @@
 
 <footer class="footer">
     <div class="container">
-        <div class="footer__address-container">
-            <ul class="footer__address-list">
-            <li class="footer__address-item"><a href="../goit-markup-hw-08/index.html"><span class="web-footer">Web</span><span class="studio-footer">Studio</span></a></li>
-            <li class="footer__address-item"><address class="address">г. Киев, пр-т Леси Украинки, 26</address></li>
-            <li class="footer__address-item"><div><a class="email-footer" href="mailto:info@example.com">info@example.com</a></div></li>
-            <li class="footer__address-item"><div><a class="phone-number-footer" href="tel:+380991111111">+38 099 111 11 11</a></div></li>
-            </ul>   
-        </div> 
-        <div class="footer__join-us-container">
-            <h3 class="footer__heading">присоединяйтесь</h3>
-            <ul class="join-us__list">
-                <li class="social-items">
-                    <a class="master-links footer-links" href="#">
-                        <svg class="master-icon" height="20px" width="20px">
-                            <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-items">
-                    <a class="master-links footer-links" href="#">
-                        <svg class="master-icon" height="20px" width="20px">
-                            <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-twitter" ></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-items">
-                    <a class="master-links footer-links" href="#">
-                        <svg class="master-icon" height="20px" width="20px">
-                            <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-facebook" ></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-items">
-                    <a class="master-links footer-links" href="#">
-                        <svg class="master-icon" height="20px" width="20px">
-                            <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-linkedin" ></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-    </div>
+    <div class="footer__container">
+            <div class="footer__main">
+                <div class="footer__address-container">
+                    <ul class="footer__address-list">
+                    <li class="footer__address-item"><a href="../goit-markup-hw-08/index.html"><span class="web-footer">Web</span><span class="studio-footer">Studio</span></a></li>
+                    <li class="footer__address-item"><address class="address">г. Киев, пр-т Леси Украинки, 26</address></li>
+                    <li class="footer__address-item"><div><a class="email-footer" href="mailto:info@example.com">info@example.com</a></div></li>
+                    <li class="footer__address-item"><div><a class="phone-number-footer" href="tel:+380991111111">+38 099 111 11 11</a></div></li>
+                    </ul>   
+                </div> 
+            </div>
+            <div class="footer__main">
+            <div class="footer__join-us-container">
+                <h3 class="footer__heading">присоединяйтесь</h3>
+                <ul class="join-us__list">
+                    <li class="social-items">
+                        <a class="master-links footer-links" href="#">
+                            <svg class="master-icon" height="20px" width="20px">
+                                <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-items">
+                        <a class="master-links footer-links" href="#">
+                            <svg class="master-icon" height="20px" width="20px">
+                                <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-twitter" ></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-items">
+                        <a class="master-links footer-links" href="#">
+                            <svg class="master-icon" height="20px" width="20px">
+                                <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-facebook" ></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-items">
+                        <a class="master-links footer-links" href="#">
+                            <svg class="master-icon" height="20px" width="20px">
+                                <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-linkedin" ></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="footer__main">
+             
+                
+                <h3 class="footer__heading  subscribe-heading">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
+
+                <form class="form footer__form">
+                    <label class=""></label> 
+                        <input 
+                        class="footer__form-input"
+                        type="email" 
+                        name="email"
+                        placeholder="E-mail"/>
+                        <button class="button-subscribe" type="submit">
+                            <div class="button-div">
+                            <p>Подписаться</p>
+                                <svg height="24" width="24">
+                                    <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-send"></use>
+                                </svg>
+                            </div>
+                        </button>
+                </form>
+            </div>
     
-    <div class="footer__subscribe">
-        <h3 class="footer__heading">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
-
-        <form class="form footer__form">
-            <label class=""></label> 
-                <input 
-                class="footer__form-input"
-                type="email" 
-                name="email"
-                placeholder="E-mail"/>
-                <button class="button-subscribe" type="submit">
-                    <p>Подписаться</p>
-                        <svg height="24" width="24">
-                            <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-send"></use>
-                        </svg>
+           
+    </div> 
+    </div>
+    <!-- MODAL WINDOW -->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="modal-button" data-modal-close>
+                    <svg height="11" width="11">
+                        <use href="../goit-markup-hw-08/images/symbol-defs.svg#x"></use>
+                    </svg>
                 </button>
-        </form>
-    </div>
+                <p class="modal-head-text">Оставьте свои данные, мы вам перезвоним</p>
+            
+                <form class="form">
+                    <div class="form-field name-input">
+                        <p class="form-text">Имя</p>
+                        <label class="form-label"></label>
+                        <div class="container-input">
+                        <input 
+                        class="form-input"
+                        type="text" 
+                        name="name"/>
+                        <div class="input-img">
+                            <svg class="svg-modal" height="12" width="12">
+                                <use href="../goit-markup-hw-08/images/symbol-defs.svg#person-input"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    </div>
 
-    </div>
+        
+                    <div class="form-field">
+                    <div class="form-text">Телефон</div>
+                    <label class="form-label"></label>
+                    <div class="container-input">
+                    <input 
+                        class="form-input"
+                        type="tel" 
+                        name="tel"/>   
+                        <div class="input-img">
+                            <svg class="svg-modal" height="12" width="12">
+                                <use href="../goit-markup-hw-08/images/symbol-defs.svg#tel-input"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    </div>
+        
+                        <div class="form-field">
+                            <p class="form-text">Почта</p>
+                            <label class="form-label"></label> 
+                            <div class="container-input">
+                            <input 
+                            class="form-input"
+                            type="email" 
+                            name="email"/>
+                            <div class="input-img">
+                                <svg class="svg-modal" height="12" width="12">
+                                    <use href="../goit-markup-hw-08/images/symbol-defs.svg#mail-input"></use>
+                                </svg>
+                            </div>  
+                        </div>
+                    </div>
+        
+                        <div class="form-field comment">
+                            <p class="form-text">Комментарий</p>
+                            <label class="form-label"></label>
+                            <textarea class="form-input textarea" name="comment" placeholder="Введите текст"></textarea>
+                        </div>
+                    
+                        <div class="checkbox-container">
+                            <label>
+                                <span class="text-agreement">Соглашаюсь с рассылкой и принимаю <a class="agreement-link link" href="#">Условия договора</a></span>
+                                <input type="checkbox" class="check" >
+
+                                <div class="checkbox-icon">   
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="modal__form--center"><button type="submit" class="form-button">Отправить</button></div>
+                </form>
+
+
+            </div>
+        </div>
 
     </footer>
 </body>
