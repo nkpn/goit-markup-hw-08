@@ -1743,6 +1743,11 @@ body {
   background: #2F303A;
   padding: 60px 0;
   text-align: center;
+  /*.subscribe-heading{
+    @media screen and (min-width:$tablet) and (max-width:$desktop) {
+        margin-bottom: 0px;
+    }
+    }*/
 }
 
 @media screen and (min-width: 768px) {
@@ -1947,27 +1952,29 @@ body {
           align-items: center;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .footer .subscribe-heading {
-    margin-bottom: 0px;
   }
 }
 
@@ -2015,10 +2022,12 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  margin-top: 20px;
-  /*@media screen and (min-width: $tablet) {
-        margin-top: 0;
-        }*/
+}
+
+@media screen and (max-width: 1200px) {
+  .footer .button-subscribe {
+    margin-top: 20px;
+  }
 }
 
 .footer .button-div {
