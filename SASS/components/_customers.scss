@@ -26,7 +26,7 @@
         height: 90px;
         max-width: 100%;
         margin: 15px;
-        width: 100%;
+        width: calc((100% - 4 * 15px) / 2);
         border: 1px solid #AFB1B8;
         color: $link-color;
         box-sizing: border-box;
