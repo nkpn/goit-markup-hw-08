@@ -220,8 +220,7 @@
 
         @media screen and  (min-width: $desktop){
             font-size: $main-font-size;
-            display: flex;
-            align-items: center;
+            
         
         &:not(:last-child){
                 padding-right: 50px;
