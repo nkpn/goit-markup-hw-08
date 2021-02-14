@@ -14,9 +14,23 @@
         <div class="container">
             <nav class="main-nav">
                 <a class="logo" href="../goit-markup-hw-08/index.html"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
+                
+                <button class="page-header__menu-button" 
+                type="button" 
+                aria-expanded="false"
+                data-menu-button>
+                <svg class="page-header__menu-icon"
+                height="40"
+                width="40"
+                aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu-open" href="../goit-markup-hw-08/images/symbol-defs.svg#menu"></use>
+                    <use class="icon-menu-close" href="../goit-markup-hw-08/images/symbol-defs.svg#cross"></use>
+                </svg>
+                </button>
+                
                 <ul class="page-header__site-nav">
                 <li class="page-header__site-nav-item">  
-                    <a class="page-header__site-nav-link" href="../goit-markup-hw-08/index.html">Студия</a>
+                    <a class="page-header__site-nav-link " href="../goit-markup-hw-08/index.html">Студия</a>
                 </li>
                 <li class="page-header__site-nav-item">
                     <a class="page-header__site-nav-link current" href="../goit-markup-hw-08/portfolio.html">Портфолио</a>
@@ -34,7 +48,7 @@
                         info@devstudio.com
                     </a>
                     <a class="page-header__auth-nav-address" href="tel:+380961111111">
-                        <svg class="header-logo" height="12" width="16">
+                        <svg class="header-logo" height="16" width="10">
                             <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-smartphone"></use>
                         </svg>
                         +38 096 111 11 11
@@ -42,9 +56,59 @@
                     </div>
             </nav>
     
+        
             
         </div>
         </header>
+        
+        <!-- Mobile menu -->
+    
+        <div class="mobile-menu" data-menu>
+            <div class="container">
+                <nav class="main-nav">
+                    <ul class="page-header__site-nav">
+                        <li class="page-header__site-nav-item">
+                            <a class="page-header__site-nav-link"
+                                href="../goit-markup-hw-08/index.html"
+                            >Студия</a>
+                        </li>
+                        <li class="page-header__site-nav-item">
+                            <a class="page-header__site-nav-link" 
+                                href="../goit-markup-hw-08/portfolio.html"
+                            >Портфолио</a>
+    
+                        </li>
+                        <li class="page-header__site-nav-item">
+                            <a class="page-header__site-nav-link"
+                            href=""
+                            >Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <div class="auth-nav">
+                    <a href="tel:+380961111111" class="page-header__auth-nav-address"
+                    >+380961111111</a>
+                    <a href="mailto:info@devstudio.com" class="page-header__auth-nav-address"
+                    >info@devstudio.com</a>
+                </div>
+    
+                <ul class="mobile-menu__social-list">
+                    <li class="social__item">
+                        <a class="social__link" href="#">Instagram </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#"> Twitter</a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#"> Facebook</a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#"> LinkedIn</a>
+                    </li>  
+                </ul>
+            </div>
+        </div>
 
     <main>    
     
