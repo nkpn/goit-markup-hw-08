@@ -63,26 +63,7 @@
         position: absolute;
         right: 0;
         top: 22px;
-
-       /* .icon-cross{
-            display: none;
-        }
-
-        .is-open .icon-cross{
-            display: block;
-        }
-
-        .is-open .icon-menu{
-            display: none;
-        }
-
-        @media screen and  (min-width: $tablet){
-            display: none;
-        }
- 
-        @media screen and  (min-width: $desktop){
-             display: none;
-        }*/
+        z-index: 25;
     }
 
     &__menu-icon{
@@ -110,7 +91,7 @@
     }
 
 
-    &__site-nav{
+    .page-header__site-nav{
        display: none;
 
        @media screen and  (min-width: $tablet){

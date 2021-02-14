@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/main.min.css">
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"> -->
@@ -24,8 +24,8 @@
             height="40px"
             width="40px"
             aria-label="Переключатель мобильного меню">
-                <use class="icon-menu" href="../goit-markup-hw-08/images/symbol-defs.svg#menu"></use>
-                <use class="icon-cross" href="../goit-markup-hw-08/images/symbol-defs.svg#cross"></use>
+                <use class="icon-menu-open" href="../goit-markup-hw-08/images/symbol-defs.svg#menu"></use>
+                <use class="icon-meny" href="../goit-markup-hw-08/images/symbol-defs.svg#cross"></use>
             </svg>
             </button>
             
@@ -42,7 +42,7 @@
             </ul>
 
             <div class="auth-nav"> 
-                <a class="page-header__auth-nav-address page-geader__mail" href="mailto:info@devstudio.com">
+                <a class="page-header__auth-nav-address page-header__mail" href="mailto:info@devstudio.com">
                     <svg class="header-logo" height="12" width="16">
                         <use href="../goit-markup-hw-08/images/symbol-defs.svg#icon-envelope"></use>
                     </svg>
@@ -62,15 +62,67 @@
     </div>
     </header>
     
+    <!-- Mobile menu -->
+
+    <div class="mobile-menu" data-menu>
+        <div class="container">
+            <nav class="main-nav">
+                <ul class="page-header__site-nav">
+                    <li class="page-header__site-nav-item">
+                        <a class="page-header__site-nav-link"
+                            href="../goit-markup-hw-08/index.html"
+                        >Студия</a>
+                    </li>
+                    <li class="page-header__site-nav-item">
+                        <a class="page-header__site-nav-link" 
+                            href="../goit-markup-hw-08/portfolio.html"
+                        >Портфолио</a>
+
+                    </li>
+                    <li class="page-header__site-nav-item">
+                        <a class="page-header__site-nav-link"
+                        href=""
+                        >Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="auth-nav">
+                <a href="tel:+380961111111" class="page-header__auth-nav-address"
+                >+380961111111</a>
+                <a href="mailto:info@devstudio.com" class="page-header__auth-nav-address"
+                >info@devstudio.com</a>
+            </div>
+
+            <ul class="mobile-menu__social-list">
+                <li class="social__item">
+                    <a class="social__link" href="#">Instagram </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="#"> Twitter</a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="#"> Facebook</a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="#"> LinkedIn</a>
+                </li>  
+            </ul>
+        </div>
+    </div>
+
     <main>  
 
+    
     <!-- H1 Section / HERO-->
+    <!--
     <section class="h1-section overlay">
             <h1 class="h1-section__title">Эффективные решения для вашего бизнеса</h1>
             <button class="h1-section__button" data-modal-open type="button">Заказать услугу</button> 
     </section>
-
+    -->
     <!-- Features section-->
+    <!--
     <section class="features">
     <div class="container">
         <h2  class="is-hidden">Наши преимущества</h2>
@@ -114,9 +166,9 @@
         </ul>
     </div>
     </section>
-    
+    -->
     <!-- What are we doing section-->
-
+    <!--
     <section class="what-are-we-doing">
         <div class="container">
         <h2 class="h2-title">Чем мы занимаемся</h2>
@@ -162,10 +214,10 @@
         </ul>
     </div>
     </section>
-    
+    -->
     
     <!-- Our team -->
-
+    <!--
     <section class="our-team">
     <div class="container">
         <h2 class="h2-title">Наша команда</h2>
@@ -446,9 +498,10 @@
         </ul>
     </div>
     </section>
-
+    -->
 
     <!-- CUSTOMERS -->
+    <!--
     <section class="customers">
         <div class="container">
             <h2 class="h2-title">Постоянные клиенты</h2>
@@ -545,8 +598,9 @@
             </div>
             </div>
 
-            <div class="footer__main">
-            <!--<div class="footer__subscribe"> -->
+            <div class="footer__main">  -->
+            <!-- 
+                
                 <h3 class="footer__heading">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
 
                 <form class="form footer__form">
@@ -566,19 +620,21 @@
                         </button>
                 </form>
             </div>
-            <!--</div>-->
+            -->
+     <!--       
     </div> 
     </div>
-
+     -->
     <!-- MODAL WINDOW -->
-
+     <!--
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button class="modal-button" data-modal-close>
                     <svg height="11" width="11">
                         <use href="../goit-markup-hw-08/images/symbol-defs.svg#x"></use>
                     </svg>
-                   <!--<img src="../goit-markup-hw-08/images/x.svg" alt="X">-->
+                   <!--<img src="../goit-markup-hw-08/images/x.svg" alt="X">--> 
+                   <!--
                 </button>
                 <p class="modal-head-text">Оставьте свои данные, мы вам перезвоним</p>
             
@@ -647,6 +703,7 @@
                                     <!-- <svg class="svg-modal" height="8" width="11">
                                         <use href="../goit-markup-hw-08/images/symbol-defs.svg#checkbox"></use>
                                     </svg> -->
+                                <!--    
                                 </div>
                             </label>
                         </div>
@@ -657,7 +714,7 @@
 
             </div>
         </div>
-
+-->
     <!--<div class="backdrop-mobile-menu" data-menu>
         <button data-toggle-backdrop-menu>Закрыть</button>
         <nav class="mobile-nav">
@@ -670,9 +727,9 @@
         <a href=""></a>
         <a href=""></a>
     </div>-->
-
+<!--
     </footer>
     <script src="./js/menu.js"></script>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script>   -->
 </body>
 </html>

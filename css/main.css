@@ -992,25 +992,7 @@ body {
   position: absolute;
   right: 0;
   top: 22px;
-  /* .icon-cross{
-            display: none;
-        }
-
-        .is-open .icon-cross{
-            display: block;
-        }
-
-        .is-open .icon-menu{
-            display: none;
-        }
-
-        @media screen and  (min-width: $tablet){
-            display: none;
-        }
- 
-        @media screen and  (min-width: $desktop){
-             display: none;
-        }*/
+  z-index: 25;
 }
 
 .page-header__menu-icon {
@@ -1043,12 +1025,12 @@ body {
   }
 }
 
-.page-header__site-nav {
+.page-header .page-header__site-nav {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .page-header__site-nav {
+  .page-header .page-header__site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1062,7 +1044,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .page-header__site-nav {
+  .page-header .page-header__site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2249,5 +2231,20 @@ body {
   line-height: 2;
   font-weight: 700;
   color: #212121;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #eeee;
+  z-index: 20;
+}
+
+.mobile-menu.is-open {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
