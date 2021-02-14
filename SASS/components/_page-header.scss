@@ -137,8 +137,8 @@
         transform: scaleX(0);  
     }
 
-    .page-header__site-nav-item:hover::after,
-    .page-header__site-nav-item:focus::after,
+    .page-header__site-nav-link:hover::after,
+    .page-header__site-nav-link:focus::after,
     .current::after{
         transform: scaleX(1);
     }
