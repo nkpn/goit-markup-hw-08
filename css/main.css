@@ -2236,11 +2236,26 @@ body {
   width: 100%;
   min-height: 100vh;
   z-index: 20;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .mobile-menu.is-open {
   display: block;
+}
+
+.mobile-menu .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 48px 40px;
+  min-height: 100vh;
 }
 
 .mobile-menu .is-open .btn-menu-open {
@@ -2252,6 +2267,72 @@ body {
 }
 
 .is-open .mobile-menu .btn-menu-close {
+  display: block;
+}
+
+.mobile-menu .page-header__site-nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu .page-header__site-nav-link {
+  font-size: 40px;
+}
+
+.mobile-menu .auth-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 64px;
+}
+
+.mobile-menu .page-header__auth-nav-address {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  color: #2196F3;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+}
+
+.mobile-menu .page-header__auth-nav-address:last-child {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  margin-bottom: 32px;
+}
+
+.mobile-menu .mobile-menu__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mobile-menu .social__item {
+  margin-top: 64px;
+}
+
+.mobile-menu .social__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-menu .social__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.mobile-menu .social__link {
+  padding: 0 10px;
+  font-size: 18px;
+  color: #2196F3;
   display: block;
 }
 /*# sourceMappingURL=main.css.map */
