@@ -1162,6 +1162,10 @@ body {
   fill: #757575;
 }
 
+.page-header__auth-nav-address:not(:last-child) {
+  padding-bottom: 10px;
+}
+
 .page-header__auth-nav-address:hover, .page-header__auth-nav-address:focus {
   -webkit-transition-property: color;
   transition-property: color;

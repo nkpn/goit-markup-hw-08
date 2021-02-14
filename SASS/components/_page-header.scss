@@ -190,6 +190,10 @@
 
     &__auth-nav-address{
         padding: auto 0;
+
+        &:not(:last-child){
+            padding-bottom: 10px;
+        }
         
         color: $primary-text-color;
         font-family: $main-font-family;
