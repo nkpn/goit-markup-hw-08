@@ -179,12 +179,12 @@
         display: none;
 
         @media screen and  (min-width: $tablet){
-        display: block;
-        justify-content: start;
+        display: inline-block;
+        margin-left: auto;
         }
 
         @media screen and  (min-width: $desktop){
-        display: block;
+        display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -194,10 +194,6 @@
     &__auth-nav-address{
         padding: auto 0;
 
-        &:not(:last-child){
-            padding-bottom: 10px;
-        }
-        
         color: $primary-text-color;
         font-family: $main-font-family;
         font-weight: $normal-font-weight;
@@ -215,7 +211,7 @@
             fill:$blue-bg-color;
             }
             
-        @media screen and  (min-width: $tablet){
+        @media screen and  (min-width: $tablet) and (max-width:$desktop){
             &:not(:last-child){
             margin-bottom: 10px;
             }
@@ -231,13 +227,6 @@
         
     }
 
-    &__mail{
-        @media screen and  (min-width: $tablet){
-            &:not(:last-child){
-            margin-bottom: 10px;
-            }
-        } 
-    }
 
     .header-logo{
         margin: 0;

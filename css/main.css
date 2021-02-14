@@ -324,14 +324,14 @@ li:focus, a:focus, address:focus {
 }
 
 .container {
-  width: 450px;
+  max-width: 450px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .container {
-    width: 738px;
+    max-width: 738px;
     padding: 0 0;
     margin: 0 auto;
   }
@@ -339,7 +339,7 @@ li:focus, a:focus, address:focus {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
     padding: 0 0;
     margin: 0 auto;
   }
@@ -1136,16 +1136,16 @@ body {
 
 @media screen and (min-width: 768px) {
   .page-header .auth-nav {
-    display: block;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    display: inline-block;
+    margin-left: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .page-header .auth-nav {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1170,10 +1170,6 @@ body {
   fill: #757575;
 }
 
-.page-header__auth-nav-address:not(:last-child) {
-  padding-bottom: 10px;
-}
-
 .page-header__auth-nav-address:hover, .page-header__auth-nav-address:focus {
   -webkit-transition-property: color;
   transition-property: color;
@@ -1185,7 +1181,7 @@ body {
   fill: #2196F3;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .page-header__auth-nav-address:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -1197,12 +1193,6 @@ body {
   }
   .page-header__auth-nav-address:not(:last-child) {
     padding-right: 50px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .page-header__mail:not(:last-child) {
-    margin-bottom: 10px;
   }
 }
 
@@ -1982,7 +1972,7 @@ body {
 }
 
 .footer .footer__form-input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   margin: 0;
   padding: 15px auto;
@@ -1994,6 +1984,12 @@ body {
   color: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (min-width: 768px) {
+  .footer .footer__form-input {
+    width: 358px;
+  }
 }
 
 .footer .footer__form-input:focus {
