@@ -1,252 +1,265 @@
-.page-header{
-    background-color: $white;
-    border-bottom: 2px solid $border-header-color;
-    justify-items: center;
+.page-header {
+  background-color: $white;
+  border-bottom: 2px solid $border-header-color;
+  justify-items: center;
+  position: relative;
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .logo {
+    margin-right: 284px;
+    padding: 16px 0;
+
+    @media screen and (min-width: $tablet) {
+      margin-right: 88px;
+      padding: 0 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 93px;
+      padding: 0 0;
+    }
+  }
+
+  .logo-web {
+    color: $blue-bg-color;
+    font-family: $primary-font-family;
+    font-weight: $bold-font-weight;
+    font-size: $logo-mobile-font-size;
+    line-height: $logo-lh;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: $desktop) {
+      font-size: $logo-font-size;
+    }
+  }
+
+  .logo-studio {
+    color: $main-text-color;
+    font-family: $primary-font-family;
+    font-weight: $bold-font-weight;
+    font-size: $logo-mobile-font-size;
+    line-height: $logo-lh;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: $desktop) {
+      font-size: $logo-font-size;
+    }
+  }
+
+  &__menu-button {
+    color: $menu-icon-color;
+    margin-left: auto;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 22px;
+    z-index: 25;
+
+    &:hover,
+    &:focus {
+      transition-property: color;
+      transition-duration: $animation-duration;
+      transition-timing-function: $animation-timing-function;
+      color: $blue-bg-color;
+    }
+
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__menu-icon {
+    background-position: center;
+    fill: currentColor;
+    width: 24px;
+    height: 16px;
+
+    &:hover,
+    &:focus {
+      transition-property: color;
+      transition-duration: $animation-duration;
+      transition-timing-function: $animation-timing-function;
+      color: $blue-bg-color;
+    }
+  }
+
+  .page-header__site-nav {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      font-family: $main-font-family;
+      font-style: normal;
+      font-weight: $normal-font-weight;
+      font-size: $main-font-size;
+      line-height: $header-link-lh;
+      margin-right: 84px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      font-family: $main-font-family;
+      font-style: normal;
+      font-weight: $normal-font-weight;
+      font-size: $main-font-size;
+      line-height: $header-link-lh;
+      margin-right: 270px;
+    }
+  }
+
+  &__site-nav-item {
+    margin-right: 50px;
+    padding: 32px 0;
     position: relative;
 
-    .main-nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .current::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $blue-bg-color;
+    opacity: 0;
+    transition-property: transform;
+    transform: scaleX(0);
+  }
+
+  .page-header__site-nav-link:hover::after,
+  .page-header__site-nav-link:focus::after,
+  .current::after {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+
+  &__site-nav-link {
+    color: $main-text-color;
+    font-weight: $normal-font-weight;
+    font-size: $main-font-size;
+    line-height: $header-link-lh;
+    letter-spacing: 0.02em;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+
+      width: 100%;
+      height: 4px;
+      background: $accent-text-color;
+      border-radius: 2px;
+      opacity: 0;
+      transition-duration: $animation-duration;
+      transition-timing-function: $animation-timing-function;
     }
 
-    .logo{
-       margin-right: 284px;
-       padding: 16px 0;
+    &:hover,
+    &:focus {
+      transition-property: color;
+      color: $blue-bg-color;
+      transition-duration: $animation-duration;
+      transition-timing-function: $animation-timing-function;
+    }
+  }
 
-       @media screen and  (min-width: $tablet){
-           margin-right: 88px;
-           padding: 0 0;
-       }
+  .auth-nav {
+    display: none;
 
-       @media screen and  (min-width: $desktop){
-            margin-right: 93px;
-            padding: 0 0;
-       }
-
+    @media screen and (min-width: $tablet) {
+      display: inline-block;
+      margin-left: auto;
     }
 
-    .logo-web{
-        color: $blue-bg-color;
-        font-family: $primary-font-family;
-        font-weight: $bold-font-weight;
-        font-size: $logo-mobile-font-size;
-        line-height: $logo-lh;
-        letter-spacing: 0.03em;
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      margin-right: -50px;
+    }
+  }
 
-        @media screen and  (min-width: $desktop){
-            font-size: $logo-font-size;
-        }
+  &__auth-nav-link {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      align-items: center;
 
-
+      color: $primary-text-color;
+      fill: $primary-text-color;
+      font-weight: $normal-font-weight;
+      font-size: $main-tablet-font-size;
+      line-height: $header-link-lh;
+      letter-spacing: 0.02em;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
     }
 
-    .logo-studio{
-        color: $main-text-color;
-        font-family: $primary-font-family;
-        font-weight: $bold-font-weight;
-        font-size: $logo-mobile-font-size;
-        line-height: $logo-lh;
-        letter-spacing: 0.03em;
-
-        @media screen and  (min-width: $desktop){
-            font-size: $logo-font-size;
-        }
+    @media screen and (min-width: $desktop) {
+      align-items: center;
+      padding: 32px 0;
+      margin-right: 50px;
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
     }
 
-    &__menu-button{
-        color: $menu-icon-color;
-        margin-left: auto;
-        padding: 0;
-        background-color: transparent;
-        cursor: pointer;
-        border: none;
-        position: absolute;
-        right: 0;
-        top: 22px;
-        z-index: 25;
+    //Предыдущий формат линки
+    /*padding: auto 0;
+    color: $primary-text-color;
+    font-family: $main-font-family;
+    font-weight: $normal-font-weight;
+    font-size: $main-tablet-font-size;
+    line-height: $header-link-lh;
+    letter-spacing: 0.02em;
+    fill: $primary-text-color;
 
-        &:hover, &:focus{
-            transition-property: color;
-            transition-duration: $animation-duration;
-            transition-timing-function: $animation-timing-function;
-            color: $blue-bg-color;
-        }
-        
-        @media screen and  (min-width: $tablet){
-            display: none;
-        }
+    &:not(:last-child) {
+      padding-right: 50px;
     }
 
-    &__menu-icon{
-        background-position: center;
-        fill: currentColor;
-        width: 24px;
-        height: 16px;
-
-        &:hover, &:focus{
-        transition-property: color;
-        transition-duration: $animation-duration;
-        transition-timing-function: $animation-timing-function;
-        color: $blue-bg-color;
-        }
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      align-items: center;
     }
 
+    @media screen and (min-width: $desktop) {
+      font-size: $main-font-size;
+    }
+    */
+    &:hover,
+    &:focus {
+      transition-property: color;
+      transition-duration: $animation-duration;
+      transition-timing-function: $animation-timing-function;
+      color: $blue-bg-color;
+      fill: $blue-bg-color;
+    }
+  }
 
-    .page-header__site-nav{
-       display: none;
+  .header-icon {
+    margin-right: 8px;
 
-       @media screen and  (min-width: $tablet){
-        display: flex;
-        font-family: $main-font-family;
-        font-style: normal;
-        font-weight: $normal-font-weight;
-        font-size: $main-font-size;
-        line-height: $header-link-lh;
-        margin-right: 84px;
-        }
-
-        @media screen and  (min-width: $desktop){
-        display: flex;
-        font-family: $main-font-family;
-        font-style: normal;
-        font-weight: $normal-font-weight;
-        font-size: $main-font-size;
-        line-height: $header-link-lh;
-        margin-right: 270px;
-        }
+    @media screen and (min-width: $desktop) {
+      margin-right: 10px;
     }
 
-    &__site-nav-item{
-        margin-right: 50px;
-        padding: 32px 0;
-        position: relative;
-        
-        &:last-child{
-            margin-right: 0;
-        }
-
+    &:hover {
+      fill: $blue-bg-color;
     }
-
-
-    .current::after{
-        content: "";
-        display: inline-block;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        background-color: $blue-bg-color;
-        opacity: 0;
-        transition-property: transform;
-        transform: scaleX(0);  
-    }
-
-    .page-header__site-nav-link:hover::after,
-    .page-header__site-nav-link:focus::after,
-    .current::after{
-        transform: scaleX(1);
-        opacity: 1;
-    }
-
-    &__site-nav-link{
-        color: $main-text-color;
-        font-weight: $normal-font-weight;
-        font-size: $main-font-size;
-        line-height: $header-link-lh;
-        letter-spacing: 0.02em;
-
-        &::after{
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -1px;
-
-            width: 100%;
-            height: 4px;
-            background: $accent-text-color;
-            border-radius: 2px;
-            opacity: 0;
-            transition-duration: $animation-duration;
-            transition-timing-function: $animation-timing-function;
-        }
-
-        &:hover, &:focus{
-            transition-property: color;
-            color:$blue-bg-color;
-            transition-duration: $animation-duration;
-            transition-timing-function: $animation-timing-function;
-        }
-        
-    }
-
-    .auth-nav{
-        display: none;
-
-        @media screen and  (min-width: $tablet){
-        display: inline-block;
-        margin-left: auto;
-        }
-
-        @media screen and  (min-width: $desktop){
-        display: flex;
-        margin-right: -50px;
-        }
-    }
-
-    &__auth-nav-link{
-        padding: auto 0;
-
-        color: $primary-text-color;
-        font-family: $main-font-family;
-        font-weight: $normal-font-weight;
-        font-size: $main-tablet-font-size;
-        line-height: $header-link-lh;
-        letter-spacing: 0.02em;
-        fill: $primary-text-color; 
-        
-        &:not(:last-child){
-            padding-right: 50px;
-        }
-    
-
-        
-            
-        @media screen and  (min-width: $tablet) and (max-width:$desktop){
-            &:not(:last-child){
-            display: block;
-            margin-bottom: 10px;
-            }
-        }  
-
-        @media screen and  (min-width: $desktop){
-            font-size: $main-font-size;
-        } 
-        
-        &:hover, &:focus{
-            transition-property: color;
-            transition-duration: $animation-duration;
-            transition-timing-function: $animation-timing-function;
-            color:$blue-bg-color;
-            fill:$blue-bg-color;
-        }
-        
-    }
-
-
-    .header-icon{
-        margin-right: 8px;
-
-        @media screen and  (min-width: $desktop){
-            margin-right: 10px;
-        }
-
-        &:hover{
-            fill: $blue-bg-color;
-        }   
-    }
+  }
 }
- 
