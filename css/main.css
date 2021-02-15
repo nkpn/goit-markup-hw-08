@@ -1144,11 +1144,6 @@ body {
 
 .page-header .auth-nav {
   display: none;
-  /*@media screen and  (min-width: $desktop){
-        display: inline-block;
-        align-items: center;
-        justify-content: center;
-        }*/
 }
 
 @media screen and (min-width: 768px) {
@@ -1158,7 +1153,16 @@ body {
   }
 }
 
-.page-header__auth-nav-address {
+@media screen and (min-width: 1200px) {
+  .page-header .auth-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: -50px;
+  }
+}
+
+.page-header__auth-nav-link {
   padding: auto 0;
   color: #757575;
   font-family: Roboto, sans-serif;
@@ -1169,7 +1173,7 @@ body {
   fill: #757575;
 }
 
-.page-header__auth-nav-address:hover, .page-header__auth-nav-address:focus {
+.page-header__auth-nav-link:hover, .page-header__auth-nav-link:focus {
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -1181,39 +1185,33 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .page-header__auth-nav-address:not(:last-child) {
+  .page-header__auth-nav-link:not(:last-child) {
     display: block;
     margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .page-header__auth-nav-address {
+  .page-header__auth-nav-link {
     font-size: 14px;
   }
-  .page-header__auth-nav-address:not(:last-child) {
+  .page-header__auth-nav-link:not(:last-child) {
     padding-right: 50px;
   }
 }
 
-.page-header .header-logo {
-  margin: 0;
-}
-
-.page-header .header-logo:hover {
-  fill: #2196F3;
-}
-
-@media screen and (min-width: 768px) {
-  .page-header .header-logo {
-    margin-right: 8px;
-  }
+.page-header .header-icon {
+  margin-right: 8px;
 }
 
 @media screen and (min-width: 1200px) {
-  .page-header .header-logo {
+  .page-header .header-icon {
     margin-right: 10px;
   }
+}
+
+.page-header .header-icon:hover {
+  fill: #2196F3;
 }
 
 .h1-section {
@@ -2083,9 +2081,9 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

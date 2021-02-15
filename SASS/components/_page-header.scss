@@ -191,14 +191,13 @@
         margin-left: auto;
         }
 
-        /*@media screen and  (min-width: $desktop){
-        display: inline-block;
-        align-items: center;
-        justify-content: center;
-        }*/
+        @media screen and  (min-width: $desktop){
+        display: flex;
+        margin-right: -50px;
+        }
     }
 
-    &__auth-nav-address{
+    &__auth-nav-link{
         padding: auto 0;
 
         color: $primary-text-color;
@@ -237,21 +236,16 @@
     }
 
 
-    .header-logo{
-        margin: 0;
+    .header-icon{
+        margin-right: 8px;
+
+        @media screen and  (min-width: $desktop){
+            margin-right: 10px;
+        }
 
         &:hover{
             fill: $blue-bg-color;
-        }
-
-        @media screen and  (min-width: $tablet){
-            margin-right: 8px;
-            }
-    
-            @media screen and  (min-width: $desktop){
-            margin-right: 10px;
-            }
-       
-        }
+        }   
     }
-    
+}
+ 
