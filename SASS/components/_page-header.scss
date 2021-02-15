@@ -208,14 +208,12 @@
         letter-spacing: 0.02em;
         fill: $primary-text-color; 
         
+        &:not(:last-child){
+            padding-right: 50px;
+        }
+    
 
-        &:hover, &:focus{
-            transition-property: color;
-            transition-duration: $animation-duration;
-            transition-timing-function: $animation-timing-function;
-            color:$blue-bg-color;
-            fill:$blue-bg-color;
-            }
+        
             
         @media screen and  (min-width: $tablet) and (max-width:$desktop){
             &:not(:last-child){
@@ -226,11 +224,14 @@
 
         @media screen and  (min-width: $desktop){
             font-size: $main-font-size;
-            
+        } 
         
-        &:not(:last-child){
-                padding-right: 50px;
-            }
+        &:hover, &:focus{
+            transition-property: color;
+            transition-duration: $animation-duration;
+            transition-timing-function: $animation-timing-function;
+            color:$blue-bg-color;
+            fill:$blue-bg-color;
         }
         
     }
