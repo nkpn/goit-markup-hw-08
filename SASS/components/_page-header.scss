@@ -239,16 +239,17 @@
 
     .header-logo{
         margin: 0;
+
         &:hover{
             fill: $blue-bg-color;
         }
 
         @media screen and  (min-width: $tablet){
-            padding-right: 8px;
+            margin-right: 8px;
             }
     
             @media screen and  (min-width: $desktop){
-            padding-right: 10px;
+            margin-right: 10px;
             }
        
         }

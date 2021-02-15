@@ -1206,13 +1206,13 @@ body {
 
 @media screen and (min-width: 768px) {
   .page-header .header-logo {
-    padding-right: 8px;
+    margin-right: 8px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .page-header .header-logo {
-    padding-right: 10px;
+    margin-right: 10px;
   }
 }
 
