@@ -1,70 +1,68 @@
-.projects{
-    font-family: $main-font-family;
-    font-style: normal;
-    background: $white;
-    padding-top: 60px;
-    padding-bottom: 60px;
+.projects {
+  font-family: $main-font-family;
+  font-style: normal;
+  background: $white;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-    @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
-    }
+  }
 
-    .visually-hidden{
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        padding: 0;
-        overflow: hidden;
-        border: 0;
-        clip: rect(0 0 0 0);
-    }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
 
-    .projects__list{
-        margin-bottom: 30px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: left;
+  .projects__list {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
 
-        @media screen and (min-width:$tablet) {
-            justify-content: center;
-        }
-        justify-content: center;
-        
+    @media screen and (min-width: $tablet) {
+      justify-content: center;
     }
+  }
 
-    .projects__item-button{
-        margin-bottom: 15px;
-        &:not(:last-child){
-            margin-right: 15px;
-        }
+  .projects__item-button {
+    margin-bottom: 15px;
+    &:not(:last-child) {
+      margin-right: 15px;
     }
+  }
 
-    .primary-button{
-        background-color: $primary-bg-color;
-        color: $main-text-color;
-        border-radius: 4px;
-        font-family: $main-font-family;
-        font-weight: $normal-font-weight;
-        font-size: $button-font-size;
-        line-height: $primary-button-lh;
-        text-align: center;
-        letter-spacing: 0.03em;
-        border-color:inherit;
-        padding: 6px 22px;
-        cursor: pointer;
-        border-radius: 4px;
-        border-color: transparent;
-        
-        &:hover, &:focus{
-            transition-property: background-color;
-            transition-duration: $animation-duration;
-            transition-timing-function: $animation-timing-function;
-            background-color: $blue-bg-color;
-            color: $white;
-            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        }
+  .primary-button {
+    background-color: $primary-bg-color;
+    color: $main-text-color;
+    border-radius: 4px;
+    font-family: $main-font-family;
+    font-weight: $normal-font-weight;
+    font-size: $button-font-size;
+    line-height: $primary-button-lh;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border-color: inherit;
+    padding: 6px 22px;
+    cursor: pointer;
+    border-radius: 4px;
+    border-color: transparent;
+
+    &:hover,
+    &:focus {
+      transition-property: background-color;
+      transition-duration: $animation-duration;
+      transition-timing-function: $animation-timing-function;
+      background-color: $blue-bg-color;
+      color: $white;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
-    
+  }
 }
