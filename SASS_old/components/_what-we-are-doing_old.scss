@@ -1,12 +1,10 @@
 .what-are-we-doing{
-    background-color: #ffffff;
-    padding-right: 30px;
+    background-color: $white;
     padding-bottom: 94px;
+    padding-right: 30px;
+    
 
-    //.what-are-we-doing .container{
-    //display: flex;
-    //flex-direction: column;
-    //position: relative;
+
 
     .h2-title{
         font-family: $primary-font-family;
